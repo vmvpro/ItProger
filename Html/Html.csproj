@@ -67,7 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="05_HTML5_LIST.html" />
+    <Content Include="04_HTML5_IMAGE.html" />
+    <Content Include="help.html" />
     <Content Include="HtmlBasic.html" />
+    <Content Include="img\html5.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
