@@ -1,0 +1,20 @@
+﻿
+.iframe_video {
+	position: ;
+	width: 50%;
+	height: 50%;
+	left: 100px
+}
+div.create_block {
+	position: center;
+	height: 0;
+	padding-bottom: 100%;
+}
+
+#vmv {
+	left: 100px
+}
+
+p + iframe {
+	width: 70%;
+}

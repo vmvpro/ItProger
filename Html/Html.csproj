@@ -67,10 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="06_HTML5_CREATEBLOCK.html" />
     <Content Include="05_HTML5_LIST.html" />
     <Content Include="04_HTML5_IMAGE.html" />
+    <Content Include="css\style.css" />
     <Content Include="help.html" />
     <Content Include="HtmlBasic.html" />
+    <Content Include="img\01_IiProger.jpg" />
+    <Content Include="img\01_sunset.jpg" />
+    <Content Include="img\02_dusk.jpg" />
+    <Content Include="img\02_IiProger.jpg" />
+    <Content Include="img\03_IiProger.jpg" />
+    <Content Include="img\03_mountains.jpg" />
+    <Content Include="img\04_autumn.jpg" />
     <Content Include="img\html5.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
