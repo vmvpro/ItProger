@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ALL_HTML5_BIGTASKS.html" />
     <Content Include="10_HTML5_Tables.html" />
     <Content Include="09_HTML5_Selectors.html" />
     <Content Include="08_HTML5_Forms.html" />
