@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="08_HTML5_Forms.html" />
     <Content Include="07_HTML5_TEGS.html" />
     <Content Include="06_HTML5_CREATEBLOCK.html" />
     <Content Include="05_HTML5_LIST.html" />
