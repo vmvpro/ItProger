@@ -1,0 +1,18 @@
+﻿body {
+}
+
+
+b + i {
+	color: red;
+}
+
+a[target="_blank"] {
+	padding: 10px;
+	border: 1px solid red;
+	border-radius: 0.5px;
+}
+
+h5, div {
+	font-size: 15px;
+	
+}
