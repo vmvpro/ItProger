@@ -67,27 +67,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ALL_HTML5_BIGTASKS.html" />
-    <Content Include="10_HTML5_Tables.html" />
-    <Content Include="09_HTML5_Selectors.html" />
-    <Content Include="08_HTML5_Forms.html" />
-    <Content Include="07_HTML5_TEGS.html" />
-    <Content Include="06_HTML5_CREATEBLOCK.html" />
-    <Content Include="05_HTML5_LIST.html" />
-    <Content Include="04_HTML5_IMAGE.html" />
+    <Content Include="Lectures\ALL_HTML5_BIGTASKS.html" />
+    <Content Include="Lectures\10_HTML5_Tables.html" />
+    <Content Include="Lectures\09_HTML5_Selectors.html" />
+    <Content Include="Lectures\08_HTML5_Forms.html" />
+    <Content Include="Lectures\07_HTML5_TEGS.html" />
+    <Content Include="Lectures\06_HTML5_CREATEBLOCK.html" />
+    <Content Include="Lectures\05_HTML5_LIST.html" />
+    <Content Include="Lectures\04_HTML5_IMAGE.html" />
+    <Content Include="Practice\ШеЗ .html" />
     <Content Include="wwwroot\lib\css\styleBootstrap.css" />
     <Content Include="wwwroot\lib\css\style.css" />
     <Content Include="help.html" />
-    <Content Include="HtmlBasic.html" />
-    <Content Include="img\01_IiProger.jpg" />
-    <Content Include="img\01_sunset.jpg" />
-    <Content Include="img\02_dusk.jpg" />
-    <Content Include="img\02_IiProger.jpg" />
-    <Content Include="img\03_IiProger.jpg" />
-    <Content Include="img\03_mountains.jpg" />
-    <Content Include="img\04_autumn.jpg" />
-    <Content Include="img\html5.jpg" />
-    <Content Include="Test.html" />
+    <Content Include="Practice\HtmlBasic.html" />
+    <Content Include="wwwroot\img\01_IiProger.jpg" />
+    <Content Include="wwwroot\img\01_sunset.jpg" />
+    <Content Include="wwwroot\img\02_dusk.jpg" />
+    <Content Include="wwwroot\img\02_IiProger.jpg" />
+    <Content Include="wwwroot\img\03_IiProger.jpg" />
+    <Content Include="wwwroot\img\03_mountains.jpg" />
+    <Content Include="wwwroot\img\04_autumn.jpg" />
+    <Content Include="wwwroot\img\html5.jpg" />
+    <Content Include="Practice\Test.html" />
     <Content Include="Web.config" />
     <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
     <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
