@@ -1,0 +1,25 @@
+﻿body {
+	
+}
+
+p {
+	font-size: 20px;
+	color: blue;
+	background: cornsilk;
+}
+
+.myClass {
+	color: mediumvioletred
+}
+
+#first {
+	height: 100px;
+	border: 1px black;
+}
+/* для id */
+#second {
+	width: 34%;
+}
+h3 {
+	text-align: center;
+}

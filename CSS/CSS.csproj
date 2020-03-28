@@ -67,8 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="index.html" />
-    <Content Include="source\css\style.css" />
+    <Content Include="01_CSS3_BasicSyntax.html" />
+    <Content Include="source\css\01\backgroundStyle.css" />
+    <Content Include="source\css\01\style.css" />
+    <Content Include="source\img\01_IiProger.jpg" />
+    <Content Include="source\img\01_sunset.jpg" />
+    <Content Include="source\img\02_dusk.jpg" />
+    <Content Include="source\img\02_IiProger.jpg" />
+    <Content Include="source\img\03_IiProger.jpg" />
+    <Content Include="source\img\03_mountains.jpg" />
+    <Content Include="source\img\04_autumn.jpg" />
+    <Content Include="source\img\css3.jpg" />
+    <Content Include="source\img\html5.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,7 +94,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="source\img\" />
     <Folder Include="source\js\" />
   </ItemGroup>
   <PropertyGroup>
