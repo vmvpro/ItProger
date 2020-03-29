@@ -8,11 +8,77 @@ b + i {
 
 a[target="_blank"] {
 	padding: 10px;
-	border: 1px solid red;
-	border-radius: 0.5px;
+	border: 1px solid blueviolet;
 }
 
-h5, div {
-	font-size: 15px;
-	
+h3, div {
+	font-size: 25px;
 }
+
+p > b {
+	color: blue;
+}
+
+div ~ em {
+	color: red;
+}
+
+a[title^=vmv_] {
+	margin-left: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 2px solid blue;
+}
+
+[title^=vmv] {
+	margin-left: 10px;
+	border: 2px solid red;
+}
+
+[title="vmv"] {
+	/*margin-top: 50px;*/
+	margin-left: 30px;
+	border: 3px solid blueviolet;
+}
+
+.color-href {
+	font-weight: bold;
+	font-size: 18px;
+	color: darkorange;
+	width: 100px;
+	height: 50px;
+	margin-right: 20px;
+	/*float: left;*/
+	border-radius: 5px;
+}
+
+	.color-href:nth-child(even) {
+		background: #86a5c9;
+		border: 2px solid #4c719b;
+	}
+
+	.color-href:nth-child(odd) {
+		background: #be7f7f;
+		border: 2px solid #973f3f;
+
+	}
+
+.block {
+	width: 100px;
+	height: 50px;
+	margin-right: 20px;
+	/*float: left;*/
+	border-radius: 5px;
+}
+
+	/* Тут мы получаем лишь чётные элементы */
+	.block:nth-child(even) {
+		background: #86a5c9;
+		border: 2px solid #4c719b;
+	}
+
+	/* Тут мы получаем лишь нечётные элементы */
+	.block:nth-child(odd) {
+		background: #be7f7f;
+		border: 2px solid #973f3f;
+	}

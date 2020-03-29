@@ -108,6 +108,7 @@
     <Content Include="source\bootstrap\js\src\util.js" />
     <Content Include="source\css\01\backgroundStyle.css" />
     <Content Include="source\css\01\style.css" />
+    <Content Include="source\css\02\dreaweaverStyle.css" />
     <Content Include="source\css\02\style02.css" />
     <Content Include="source\img\01_IiProger.jpg" />
     <Content Include="source\img\01_sunset.jpg" />
