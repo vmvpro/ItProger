@@ -1,0 +1,13 @@
+﻿$color-primary: hsl(220, 90%, 56%);
+
+.boxFlex.one 
+	display: flex
+	width: 100px
+	height: 100px
+	color: white
+	border: 1px solid aqua
+	/*border-radius: 50%;*/
+	background: blueviolet
+	align-items: center
+	justify-content: center
+

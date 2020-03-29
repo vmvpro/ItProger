@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="01_CSS3_BasicSyntax.html" />
     <Content Include="02_CSS3_Selectors.html" />
+    <Content Include="03_CSS3_AddStyles.html" />
     <Content Include="source\bootstrap\dist\css\bootstrap-grid.css" />
     <Content Include="source\bootstrap\dist\css\bootstrap-grid.min.css" />
     <Content Include="source\bootstrap\dist\css\bootstrap-reboot.css" />
