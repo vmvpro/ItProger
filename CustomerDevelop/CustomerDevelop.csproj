@@ -81,7 +81,6 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
-    <None Include="gulpfile_.js_" />
     <Content Include="index.html" />
     <Content Include="js\bundle.js" />
     <Content Include="Web.config" />

@@ -12,8 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.a11yrc = .a11yrc
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CssAndScss", "CssAndScss\CssAndScss.csproj", "{F01D9F79-8B72-46FB-B723-1414EAE9075F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerDevelop", "CustomerDevelop\CustomerDevelop.csproj", "{F9937704-FBA2-4CDD-BC14-40A2A1487738}"
 EndProject
 Global
@@ -40,14 +38,6 @@ Global
 		{AF7B57A4-DABB-41A7-AE93-A0061546AF45}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF7B57A4-DABB-41A7-AE93-A0061546AF45}.Release|x86.ActiveCfg = Release|Any CPU
 		{AF7B57A4-DABB-41A7-AE93-A0061546AF45}.Release|x86.Build.0 = Release|Any CPU
-		{F01D9F79-8B72-46FB-B723-1414EAE9075F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F01D9F79-8B72-46FB-B723-1414EAE9075F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F01D9F79-8B72-46FB-B723-1414EAE9075F}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{F01D9F79-8B72-46FB-B723-1414EAE9075F}.Debug|x86.Build.0 = Debug|Any CPU
-		{F01D9F79-8B72-46FB-B723-1414EAE9075F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F01D9F79-8B72-46FB-B723-1414EAE9075F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F01D9F79-8B72-46FB-B723-1414EAE9075F}.Release|x86.ActiveCfg = Release|Any CPU
-		{F01D9F79-8B72-46FB-B723-1414EAE9075F}.Release|x86.Build.0 = Release|Any CPU
 		{F9937704-FBA2-4CDD-BC14-40A2A1487738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F9937704-FBA2-4CDD-BC14-40A2A1487738}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9937704-FBA2-4CDD-BC14-40A2A1487738}.Debug|x86.ActiveCfg = Debug|Any CPU
