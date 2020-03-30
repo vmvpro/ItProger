@@ -1,0 +1,15 @@
+﻿$color: #0f56ff;
+$color-p: #ff00fa;
+$color-h2:#f2b03b;
+$bold-font: bold;
+
+h1{
+	color:$color;
+}
+
+p {
+	color: $color-p;
+	font-weight: $bold-font;
+	border: 3px solid #1047fc;
+}
+

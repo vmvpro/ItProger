@@ -1,0 +1,24 @@
+[
+	{
+		"outputFileName": "css/bundle.css",
+		"inputFiles": [
+			"css/style.css"
+			//"css/styleSCSS.css"
+			//"static/css/*.css"
+		]
+	},
+	{
+		"outputFileName": 
+			"js/bundle.js",
+
+		"inputFiles": [
+			"js/site.js",
+			"js/site2.js"
+			//"static/js/*.js"
+		],
+		"minify": {
+			"enabled": true,
+			"renameLocals": true
+		}
+	}
+]
