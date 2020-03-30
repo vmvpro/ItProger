@@ -1,64 +1,58 @@
-﻿"use strict";
+﻿/// <binding />
+'use strict';
 
-var _gulp = require("gulp");
-var _rimraf = require("rimraf");
-var _concat = require("gulp-concat");
-var _cssmin = require("gulp-cssmin");
-var _uglify = require("gulp-uglify");
-var _sass = require("gulp-sass"); // добавляем модуль sass
+var gulp = require('gulp');
+var	sass = require('gulp-sass'); // добавляем модуль sass
+var uglifycss = require('gulp-uglifycss'); // добавляем модуль sass
 
+//// регистрируем задачу для конвертации файла scss в css
 
-var paths = {
-	//webroot: "./wwwroot/"
-	webroot: "./"
-};
-
-//paths.js = paths.webroot + "js/**/*.js";
-//paths.minJs = paths.webroot + "js/**/*.min.js";
-//paths.css = paths.webroot + "css/**/*.css";
-//paths.minCss = paths.webroot + "css/**/*.min.css";
-//paths.concatJsDest = paths.webroot + "js/site.min.js";
-//paths.concatCssDest = paths.webroot + "css/site.min.css";
-
-paths.js = paths.webroot + "js/*.js";
-paths.minJs = paths.webroot + "js/*.min.js";
-paths.css = paths.webroot + "css/*.css";
-paths.minCss = paths.webroot + "css/*.min.css";
-paths.concatJsDest = paths.webroot + "js/site.min.js";
-paths.concatCssDest = paths.webroot + "css/site.min.css";
-paths.Scss = paths.webroot + "css/*.scss";
-
-
-_gulp.task("clean:js", function (cb) {
-	_rimraf(paths.concatJsDest, cb);
+var gulp_sass = gulp.task('sass', function () {
+	return gulp.src('./scss/*.scss')
+		.pipe(sass())
+		.pipe(gulp.dest('./dist/css'));
 });
 
-_gulp.task("clean:css", function (cb) {
-	_rimraf(paths.concatCssDest, cb);
+var gulp_css = gulp.task('css', function () {
+	return gulp.src('./scss/*.css')
+		.pipe(uglifycss({
+			'uglyComments': true
+		}))
+		.pipe(gulp.dest('./dist/css'));
 });
 
-_gulp.task("clean", _gulp.series(["clean:js", "clean:css"]));
+//gulp.series('default', gulp.parallel(gulp_sass, gulp_css));
 
-_gulp.task("min:js", function () {
-	return _gulp.src( [paths.js, "!" + paths.minJs], { base: "." })
-		.pipe(_concat(paths.concatJsDest))
-		.pipe(_uglify())
-		.pipe(_gulp.dest("."));
-});
+//gulp.task('run', ['sass', 'css']);
 
-_gulp.task("min:css", function () {
-	return _gulp.src([paths.css, "!" + paths.minCss])
-		.pipe(_concat(paths.concatCssDest))
-		.pipe(_cssmin())
-		.pipe(_gulp.dest("."));
-});
+//gulp.task('watch',
+//	function () {
+//		gulp.watch('./scss/*.scss', ['sass']);
+//		gulp.watch('./css/*.css', ['css']);
+//	});
 
-_gulp.task("sass", function () {
-	return _gulp.src([paths.Scss])
-		.pipe(_sass())
-		.pipe(_gulp.dest('./css'));
-});
+//gulp.task('default', ['run', 'watch']);
 
+//---------------------------------------------------
 
+//gulp.task('css:watch', function () {
+//	gulp.watch('./dist/', ['css']);
+//});
 
-_gulp.task("min", _gulp.series(["min:js", "min:css"]));
+//gulp.task('css:watch_', function () {
+//	gulp.watch('./dist', ['css']);
+//});
+
+//gulp.task('default', gulp.parallel(styles, scripts));
+
+//gulp.watch('./dist', ['css']);
+
+//gulp.series('css:watch_', function () {
+//	gulp.watch('./dist', ['css']);
+//});
+
+//gulp.task("watch",
+//	function() {
+//		'scss/style.sccs', gulp.parallel('sass');
+//	});
+

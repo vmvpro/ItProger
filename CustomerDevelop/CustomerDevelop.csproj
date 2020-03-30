@@ -67,23 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\bundle.css" />
-    <Content Include="css\bundle.min.css">
-      <DependentUpon>bundle.css</DependentUpon>
-    </Content>
-    <Content Include="css\style.css" />
+    <Content Include="dist\css\style.css" />
+    <Content Include="dist\css\style.min.css" />
     <Content Include="gulpfile.es5.js">
-      <DependentUpon>gulpfile.js_</DependentUpon>
+      <DependentUpon>gulpfile.js</DependentUpon>
     </Content>
     <Content Include="gulpfile.es5.min.js">
       <DependentUpon>gulpfile.es5.js</DependentUpon>
     </Content>
+    <Content Include="gulpfile.js" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
-    <None Include="gulpfile.js_" />
-    <Content Include="gulpfile.js" />
+    <None Include="gulpfile_.js_" />
     <Content Include="index.html" />
     <Content Include="js\bundle.js" />
     <Content Include="Web.config" />
@@ -92,9 +89,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bundleconfig.json" />
+    <None Include="bundleconfig.json_" />
     <None Include="package.json" />
-    <Content Include="css\style.scss" />
+    <Content Include="scss\style.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -105,7 +102,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="scss\" />
+    <Folder Include="css\" />
+    <Folder Include="dist\js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
