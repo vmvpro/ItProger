@@ -27,35 +27,93 @@ var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var uglifycss = require('gulp-uglifycss'); // добавляем модуль sass
 
-gulp.task('sass', function (done) {
-	gulp.src("scss/*.scss")
-		.pipe(sass({ outputStyle: 'compressed' }))
+var _sass = function (done) {
+		gulp.src("scss/*.scss")
+		//.pipe(sass({ outputStyle: 'compressed' }))
+		.pipe(sass({ outputStyle: 'expanded' }))
 		.pipe(gulp.dest("dist/css"))
 		.pipe(browserSync.stream());
 
 	done();
-});
+}
 
-gulp.task('serve', function (done) {
+//gulp.task('sass', function (done) {
+//	gulp.src("scss/*.scss")
+//		//.pipe(sass({ outputStyle: 'compressed' }))
+//		.pipe(sass({ outputStyle: 'expanded' }))
+//		.pipe(gulp.dest("dist/css"))
+//		.pipe(browserSync.stream());
+
+//	done();
+//});
+
+var _serve = function (done) {
 
 	browserSync.init(
-		{
-			server: ""
-		},
-		{
-			notify: false // отклчение уведомлений
-		});
+		{ server: "" }
+		//{ notify: true } // отклчение уведомлений
+	);
 
-	gulp.watch("scss/*.scss", gulp.series('sass'));
+	//gulp.watch("scss/*.scss", gulp.series('sass'));
+	gulp.watch("scss/*.scss", gulp.series(_sass));
 	gulp.watch("*.html").on('change', () => {
 		browserSync.reload();
 		done();
 	});
 
 	done();
-});
+}
 
-gulp.task('default', gulp.series('sass', 'serve'));
+//gulp.task('serve', function (done) {
+
+//	browserSync.init(
+//		{ server: "" }
+//		//{ notify: true } // отклчение уведомлений
+//	);
+
+//	gulp.watch("scss/*.scss", gulp.series('sass'));
+//	gulp.watch("*.html").on('change', () => {
+//		browserSync.reload();
+//		done();
+//	});
+
+//	done();
+//});
+
+
+
+//gulp.task('default', gulp.series('sass', 'serve'));
+gulp.task('default', gulp.series(_sass, _serve));
+
+//---------------------------------------------------
+
+//var cleanCSS = require('gulp-clean-css');
+//var rename = require('gulp-rename');
+
+//gulp.task('minify-css', function () {
+//	return gulp.src('css/dist/dist.css')
+//		.pipe(cleanCSS())
+//		.pipe(rename('dist.min.css'))
+//		.pipe(gulp.dest('css/dist'));
+//});
+
+
+//gulp.task('css', function () {
+//	gulp.src('./styles/**/*.css')
+//		.pipe(uglifycss())
+//		.pipe(gulp.dest('./dist/'));
+//});
+
+//gulp.task('css', function () {
+//	gulp.src('css/*.css')
+//		.pipe(uglifycss({
+//			"maxLineLen": 80,
+//			"uglyComments": true
+//		}))
+//		.pipe(gulp.dest('./dist/'));
+//});
+
+//----------------------------------------------------
 
 //gulp.series('default', gulp.parallel(gulp_sass, gulp_css));
 

@@ -67,6 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dist\css\style.min.css" />
+    <Content Include="dist\css\style_01.css" />
+    <Content Include="dist\css\style_02.css" />
     <Content Include="gulpfile.es5.js">
       <DependentUpon>gulpfile.js</DependentUpon>
     </Content>
@@ -87,10 +90,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bundleconfig.json_" />
+    <None Include="bundleconfig.json" />
     <None Include="package.json" />
-    <Content Include="scss\style.scss" />
+    <Content Include="scss\style_01.scss" />
     <None Include="packages.config" />
+    <Content Include="scss\style_02.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
@@ -100,7 +104,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="dist\css\" />
     <Folder Include="dist\js\" />
   </ItemGroup>
   <PropertyGroup>

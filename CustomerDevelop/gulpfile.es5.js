@@ -31,21 +31,17 @@ var uglifycss = require('gulp-uglifycss'); // добавляем модуль sa
 
 gulp.task('sass', function (done) {
 	gulp.src("scss/*.scss")
-	//.pipe(sass())
-	.pipe(sass({
-		outputStyle: 'compressed'
-	})).pipe(gulp.dest("dist/css")).pipe(browserSync.stream());
+	//.pipe(sass({ outputStyle: 'compressed' }))
+	.pipe(sass({ outputStyle: 'expanded' })).pipe(gulp.dest("dist/css")).pipe(browserSync.stream());
 
 	done();
 });
 
 gulp.task('serve', function (done) {
 
-	browserSync.init({
-		server: ""
-	}, {
-		notify: false // отклчение уведомлений
-	});
+	browserSync.init({ server: "" }
+	//{ notify: true } // отклчение уведомлений
+	);
 
 	gulp.watch("scss/*.scss", gulp.series('sass'));
 	gulp.watch("*.html").on('change', function () {
@@ -57,6 +53,25 @@ gulp.task('serve', function (done) {
 });
 
 gulp.task('default', gulp.series('sass', 'serve'));
+
+//---------------------------------------------------
+
+//gulp.task('css', function () {
+//	gulp.src('./styles/**/*.css')
+//		.pipe(uglifycss())
+//		.pipe(gulp.dest('./dist/'));
+//});
+
+//gulp.task('css', function () {
+//	gulp.src('css/*.css')
+//		.pipe(uglifycss({
+//			"maxLineLen": 80,
+//			"uglyComments": true
+//		}))
+//		.pipe(gulp.dest('./dist/'));
+//});
+
+//----------------------------------------------------
 
 //gulp.series('default', gulp.parallel(gulp_sass, gulp_css));
 
