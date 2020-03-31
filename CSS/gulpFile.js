@@ -30,10 +30,15 @@ paths.concatCssMapDest = paths.webroot + "css/*.min.map";
 //	rimraf(paths.concatJsDest, done);
 //});
 
-gulp.task("clean:css", function (done) {
+var cssClean = function(done) {
 	rimraf("source/scss/*.min.css", done);
 	rimraf("source/scss/*.map", done);
-});
+};
+
+//gulp.task("clean:css", function (done) {
+//	rimraf("source/scss/*.min.css", done);
+//	rimraf("source/scss/*.map", done);
+//});
 
 //gulp.task('Clean: css, js',
 //	gulp.series('clean:css', 'clean:css'));
@@ -120,5 +125,5 @@ var functionService = function (done) {
 // Создание задачи в Visual Studio
 // Tasks Manager (Диспетчер выполнения задач)
 gulp.task('run_service',
-	gulp.series(functionSass, functionService));
+	gulp.series(functionSass, functionService, cssClean));
 
