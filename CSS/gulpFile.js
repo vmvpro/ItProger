@@ -6,6 +6,7 @@ var rimraf = require("rimraf");
 var concat = require("gulp-concat");
 var cssmin = require("gulp-cssmin");
 var uglify = require("gulp-uglify");
+var log = require('fancy-log');
 
 var htmlFile = {
 	Name: "index_03_AddStyles.html"
@@ -98,6 +99,7 @@ var functionSass = function (done) {
 		.pipe(browserSync.stream());
 
 	//gulp.log("sdasd");
+	log("vmv");
 	gulp.series(cssClean);
 
 	done();
