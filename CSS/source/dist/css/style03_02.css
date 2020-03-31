@@ -1,7 +1,3 @@
-body {
-  /*background-image: url(../../background.jpg);*/
-}
-
 .boxFlex.one {
   display: flex;
   width: 80px;

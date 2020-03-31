@@ -1,7 +1,4 @@
-﻿body {
-	/*background-image: url(../../background.jpg);*/
-}
-.boxFlex.one {
+﻿.boxFlex.one {
 	display: flex;
 	width: 80px;
 	height: 50px;
@@ -13,7 +10,7 @@
 	align-items: center;
 	justify-content: center;
 }
-span{
-	border: 1px dotted red;
-}
 
+span{
+	border: 1px dotted red; 
+}
