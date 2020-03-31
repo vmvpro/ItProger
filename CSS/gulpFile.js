@@ -7,16 +7,6 @@ var concat = require("gulp-concat");
 var cssmin = require("gulp-cssmin");
 var uglify = require("gulp-uglify");
 
-var numberTask = "vmv";
-
-var htmlFile = {
-	Name: "index_03_AddStyles"
-};
-
-var cssFile = {
-	Name: "style03"
-};
-
 var paths = {
 	//webroot: "./wwwroot/"
 	webroot: "source/"
@@ -40,27 +30,20 @@ paths.concatCssMapDest = paths.webroot + "css/*.min.map";
 //	rimraf(paths.concatJsDest, done);
 //});
 
-var cssClean = function (done) {
-	rimraf("source/scss/*.css", done);
+var cssClean = function(done) {
+	rimraf("source/scss/*.min.css", done);
 	rimraf("source/scss/*.map", done);
 };
 
-gulp.task("clean:css", function (done) {
-	rimraf("source/scss/*.min.css", done);
-	rimraf("source/scss/*.map", done);
-});
+//gulp.task("clean:css", function (done) {
+//	rimraf("source/scss/*.min.css", done);
+//	rimraf("source/scss/*.map", done);
+//});
 
 //gulp.task('Clean: css, js',
 //	gulp.series('clean:css', 'clean:css'));
 
 //----------------------------------------------------------------
-
-var minCss = function () {
-	return gulp.src(["source/dist/css/*.css", "!source/dist/css/*.min.css"])
-		.pipe(concat("source/dist/css/" + cssFile.Name + ".min.css"))
-		.pipe(cssmin())
-		.pipe(gulp.dest("."));
-};
 
 //gulp.task("min:css", function () {
 //	return gulp.src(["source/css/**/*.css", "!source/css/**/*.min.css"])
@@ -107,9 +90,16 @@ var functionService = function (done) {
 		//}
 		server: {
 			baseDir: "./",
-			index: htmlFile.Name + ".html"
+			index: "03_CSS3_AddStyles.html"
 		}
-
+		//socket: {
+		//	domain: "localhost:41525"
+		//}
+		//port: 41525
+		//server: ""
+		//ui: "port: 41525" 
+		//proxy: "http://localhost:41525"
+		//proxy: "http://localhost:41525/03_CSS3_AddStyles.html"
 	}
 
 		// отклчение уведомлений сервера, 
@@ -135,5 +125,5 @@ var functionService = function (done) {
 // Создание задачи в Visual Studio
 // Tasks Manager (Диспетчер выполнения задач)
 gulp.task('run_service',
-	gulp.series(functionSass, functionService, cssClean, minCss));
+	gulp.series(functionSass, functionService, cssClean));
 
