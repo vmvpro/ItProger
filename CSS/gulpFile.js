@@ -53,7 +53,7 @@ var cssClean = function (done) {
 //----------------------------------------------------------------
 
 var cssMin = function () {
-	return gulp.src(["source/dist/css/*.css", "!source/dist/css/*.min.css"])
+	return gulp.src(["source/css/*.css", "!source/css/*.min.css"])
 		.pipe(concat("source/css/" + nameFileCss + ".min.css"))
 		.pipe(cssmin())
 		.pipe(gulp.dest("."))
@@ -93,7 +93,7 @@ var functionSass = function (done) {
 		.pipe(sass({ outputStyle: 'expanded' }))
 
 		//Расположение преобразованных файлов *.css 
-		.pipe(gulp.dest("source/dist/css"))
+		.pipe(gulp.dest("source/css"))
 
 		// соединение веб-браузера
 		.pipe(browserSync.stream());

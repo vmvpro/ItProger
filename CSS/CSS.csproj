@@ -67,10 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="background.jpg" />
     <Content Include="index_01_BasicSyntax.html" />
     <Content Include="index_02_Selectors.html" />
     <Content Include="index_03_AddStyles.html" />
     <Content Include="gulpFile.js" />
+    <Content Include="source\background.jpg" />
     <Content Include="source\bootstrap\dist\css\bootstrap-grid.css" />
     <Content Include="source\bootstrap\dist\css\bootstrap-grid.min.css" />
     <Content Include="source\bootstrap\dist\css\bootstrap-reboot.css" />
@@ -113,9 +115,8 @@
     <Content Include="source\css\02\dreaweaverStyle.css" />
     <Content Include="source\css\02\style02.css" />
     <Content Include="source\css\03\style03.css" />
-    <Content Include="source\css\vmv.min.css" />
-    <Content Include="source\dist\css\style03_01.css" />
-    <Content Include="source\dist\css\style03_02.css" />
+    <Content Include="source\css\style03_01.css" />
+    <Content Include="source\css\style03_02.css" />
     <Content Include="source\img\01_IiProger.jpg" />
     <Content Include="source\img\01_sunset.jpg" />
     <Content Include="source\img\02_dusk.jpg" />
@@ -277,8 +278,6 @@
           <DevelopmentServerPort>41525</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:41525/</IISUrl>
-          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://localhost:3000/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
