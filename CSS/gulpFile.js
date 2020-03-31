@@ -108,13 +108,13 @@ var functionSass = function (done) {
 
 	done();
 
-	log("after functionSass done()");
+	//log("after functionSass done()");
 }
 
 
 var functionService = function (done) {
 
-	log("befor functionService");
+	//log("befor functionService");
 	browserSync.init({
 		//server: {
 		//	baseDir: "./"
@@ -141,7 +141,7 @@ var functionService = function (done) {
 		//{ notify: true } 
 	);
 
-	log("after functionService");
+	//log("after functionService");
 
 	// В данном случае, файл в корневом 
 	// размецении проекта
@@ -171,7 +171,7 @@ var functionService = function (done) {
 
 	done();
 
-	log("befor functionSass done()");
+	//log("befor functionSass done()");
 }
 
 // Создание задачи в Visual Studio
