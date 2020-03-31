@@ -26,38 +26,37 @@ paths.concatCssDest = paths.webroot + "css/*.min.css";
 paths.concatCssMapDest = paths.webroot + "css/*.min.map";
 //---------------------------------------------------------
 
-gulp.task("clean:js", function (cb) {
-	rimraf(paths.concatJsDest, cb);
-	rimraf(paths.concatJsMapDest, cb);
+//gulp.task("clean:js", function (done) {
+//	rimraf(paths.concatJsDest, done);
+//});
+
+gulp.task("clean:css", function (done) {
+	rimraf("source/scss/*.min.css", done);
+	rimraf("source/scss/*.map", done);
 });
 
-gulp.task("clean:css", function (cb) {
-	rimraf(paths.concatCssDest, cb);
-	rimraf(paths.concatCssMapDest, cb);
-});
-
-gulp.task('Clean: css, js',
-	gulp.series('clean:css', 'clean:css'));
+//gulp.task('Clean: css, js',
+//	gulp.series('clean:css', 'clean:css'));
 
 //----------------------------------------------------------------
 
-gulp.task("min:css", function () {
-	return gulp.src(["source/css/**/*.css", "!source/css/**/*.min.css"])
-		.pipe(concat(paths.concatCssDest))
-		.pipe(cssmin())
-		.pipe(gulp.dest("."));
-});
+//gulp.task("min:css", function () {
+//	return gulp.src(["source/css/**/*.css", "!source/css/**/*.min.css"])
+//		.pipe(concat(paths.concatCssDest))
+//		.pipe(cssmin())
+//		.pipe(gulp.dest("."));
+//});
 
 
-gulp.task("min:js", function () {
-	return gulp.src([paths.webroot + "js/**/*.js", "!" + paths.webroot + "js/**/*.min.js"], { base: "." })
-		.pipe(concat(paths.concatJsDest))
-		.pipe(uglify())
-		.pipe(gulp.dest(""));
-});
+//gulp.task("min:js", function () {
+//	return gulp.src([paths.webroot + "js/**/*.js", "!" + paths.webroot + "js/**/*.min.js"], { base: "." })
+//		.pipe(concat(paths.concatJsDest))
+//		.pipe(uglify())
+//		.pipe(gulp.dest(""));
+//});
 
-gulp.task("Min: css, js",
-	gulp.series("min:css", "min:js"));
+//gulp.task("Min: css, js",
+//	gulp.series("min:css", "min:js"));
 
 //----------------------------------------------------------------
 var functionSass = function (done) {
@@ -81,15 +80,21 @@ var functionSass = function (done) {
 var functionService = function (done) {
 
 	browserSync.init({
-
+		//server: {
+		//	baseDir: "./"
+		//}
+		server: {
+			baseDir: "./",
+			index: "03_CSS3_AddStyles.html"
+		}
 		//socket: {
 		//	domain: "localhost:41525"
 		//}
 		//port: 41525
-		server: ""
+		//server: ""
 		//ui: "port: 41525" 
 		//proxy: "http://localhost:41525"
-		//proxy: "http://localhost:3000"
+		//proxy: "http://localhost:41525/03_CSS3_AddStyles.html"
 	}
 
 		// отклчение уведомлений сервера, 
@@ -105,7 +110,7 @@ var functionService = function (done) {
 	// размецении проекта
 	gulp.watch(
 		"*.html").on('change', () => {
-			browserSync.reload();
+			browserSync.reload("");
 			done();
 		});
 
