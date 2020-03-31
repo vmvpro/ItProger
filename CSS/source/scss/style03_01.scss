@@ -1,8 +1,4 @@
 ﻿
-
-body {
-}
-
 .paddBox {
 	background: bisque;
 	width: 100%;
@@ -58,15 +54,3 @@ div p:first-child {
 	justify-content: center;
 }
 
-.boxFlex.one {
-	display: flex;
-	width: 80px;
-	height: 50px;
-	color: white;
-	border: 2px solid aqua;
-	/*border-radius: 50%;*/
-	border-radius: calc(width/2);
-	background: blueviolet;
-	align-items: center;
-	justify-content: center;
-}

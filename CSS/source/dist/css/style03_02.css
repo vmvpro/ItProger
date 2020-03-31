@@ -1,0 +1,16 @@
+.boxFlex.one {
+  display: flex;
+  width: 80px;
+  height: 50px;
+  color: white;
+  border: 5px solid aqua;
+  /*border-radius: 50%;*/
+  border-radius: calc(width/2);
+  background: blueviolet;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  border: 1px dotted red;
+}
