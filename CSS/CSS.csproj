@@ -67,9 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="01_CSS3_BasicSyntax.html" />
-    <Content Include="02_CSS3_Selectors.html" />
-    <Content Include="03_CSS3_AddStyles.html" />
+    <Content Include="index_01_BasicSyntax.html" />
+    <Content Include="index_02_Selectors.html" />
+    <Content Include="index_03_AddStyles.html" />
     <Content Include="gulpFile.js" />
     <Content Include="source\bootstrap\dist\css\bootstrap-grid.css" />
     <Content Include="source\bootstrap\dist\css\bootstrap-grid.min.css" />
@@ -113,7 +113,9 @@
     <Content Include="source\css\02\dreaweaverStyle.css" />
     <Content Include="source\css\02\style02.css" />
     <Content Include="source\css\03\style03.css" />
-    <Content Include="source\dist\css\style03.css" />
+    <Content Include="source\dist\css\style03.min.css" />
+    <Content Include="source\dist\css\style03_02.css" />
+    <Content Include="source\dist\css\style03_01.css" />
     <Content Include="source\img\01_IiProger.jpg" />
     <Content Include="source\img\01_sunset.jpg" />
     <Content Include="source\img\02_dusk.jpg" />
@@ -247,7 +249,8 @@
     <Content Include="source\bootstrap\scss\utilities\_text.scss" />
     <Content Include="source\bootstrap\scss\utilities\_visibility.scss" />
     <Content Include="source\bootstrap\scss\vendor\_rfs.scss" />
-    <Content Include="source\scss\style03.scss" />
+    <Content Include="source\scss\style03_01.scss" />
+    <Content Include="source\scss\style03_02.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

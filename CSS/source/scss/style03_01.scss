@@ -1,11 +1,13 @@
-﻿
+﻿$backgrund-image: url(../img/01_sunset.jpg)
 
-body {
+body
+{
+	background-image: $backgrund-image;
 }
 
 .paddBox {
 	background: bisque;
-	width: 70%;
+	width: 80%;
 	margin: 3%;
 }
 
