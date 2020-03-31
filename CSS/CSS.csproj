@@ -118,7 +118,6 @@
     <Content Include="source\dist\css\style03_02.css" />
     <Content Include="source\img\01_IiProger.jpg" />
     <Content Include="source\img\01_sunset.jpg" />
-    <Content Include="source\img\01_sunset.png" />
     <Content Include="source\img\02_dusk.jpg" />
     <Content Include="source\img\02_IiProger.jpg" />
     <Content Include="source\img\03_IiProger.jpg" />
@@ -278,6 +277,8 @@
           <DevelopmentServerPort>41525</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:41525/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:3000/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
