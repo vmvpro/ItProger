@@ -7,6 +7,12 @@ var concat = require("gulp-concat");
 var cssmin = require("gulp-cssmin");
 var uglify = require("gulp-uglify");
 
+var htmlFile = {
+	Name: "index_03_AddStyles.html"
+};
+
+var nameFileCss = "vmv";
+
 var paths = {
 	//webroot: "./wwwroot/"
 	webroot: "source/"
@@ -30,7 +36,7 @@ paths.concatCssMapDest = paths.webroot + "css/*.min.map";
 //	rimraf(paths.concatJsDest, done);
 //});
 
-var cssClean = function(done) {
+var cssClean = function (done) {
 	rimraf("source/scss/*.min.css", done);
 	rimraf("source/scss/*.map", done);
 };
@@ -45,11 +51,15 @@ var cssClean = function(done) {
 
 //----------------------------------------------------------------
 
-var minCss = function () {
+var cssMin = function () {
 	return gulp.src(["source/dist/css/*.css", "!source/dist/css/*.min.css"])
-		.pipe(concat("source/dist/css/vmv.min.css"))
+		.pipe(concat("source/css/" + nameFileCss + ".min.css"))
 		.pipe(cssmin())
-		.pipe(gulp.dest("."));
+		.pipe(gulp.dest("."))
+		
+		// соединение веб-браузера
+		//.pipe(browserSync.stream())
+	;
 };
 
 
@@ -87,8 +97,15 @@ var functionSass = function (done) {
 		// соединение веб-браузера
 		.pipe(browserSync.stream());
 
+	//gulp.log("sdasd");
+	gulp.series(cssClean);
+
 	done();
 }
+
+var file_ = function () {
+
+};
 
 var functionService = function (done) {
 
@@ -96,9 +113,11 @@ var functionService = function (done) {
 		//server: {
 		//	baseDir: "./"
 		//}
+		//files: ["source/dist/css/vmv.min.css"],
+
 		server: {
 			baseDir: "./",
-			index: "03_CSS3_AddStyles.html"
+			index: htmlFile.Name
 		}
 		//socket: {
 		//	domain: "localhost:41525"
@@ -108,22 +127,33 @@ var functionService = function (done) {
 		//ui: "port: 41525" 
 		//proxy: "http://localhost:41525"
 		//proxy: "http://localhost:41525/03_CSS3_AddStyles.html"
+
+
 	}
 
 		// отклчение уведомлений сервера, 
 		//{ notify: true } 
 	);
 
+	// В данном случае, файл в корневом 
+	// размецении проекта
+	
+
 	// Подключение слежение за файлами
 	gulp.watch(
 		"source/scss/*.scss",
-		gulp.series(functionSass));
+		gulp.series(functionSass, cssMin, cssClean));
 
-	// В данном случае, файл в корневом 
-	// размецении проекта
+	//minCss,
+
+	//gulp.watch("source/css/" + nameFileCss + ".min.css",
+	//	gulp.series(minCss));
+
 	gulp.watch(
-		"*.html").on('change', () => {
+			"*.html")
+		.on('change', () => {
 			browserSync.reload("");
+			//gulp.series(cssMin);
 			done();
 		});
 
@@ -133,5 +163,5 @@ var functionService = function (done) {
 // Создание задачи в Visual Studio
 // Tasks Manager (Диспетчер выполнения задач)
 gulp.task('run_service',
-	gulp.series(functionSass, functionService, minCss, cssClean));
+	gulp.series(functionSass, functionService, cssMin, cssClean));
 
