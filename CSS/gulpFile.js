@@ -45,6 +45,14 @@ var cssClean = function(done) {
 
 //----------------------------------------------------------------
 
+var minCss = function () {
+	return gulp.src(["source/dist/css/*.css", "!source/dist/css/*.min.css"])
+		.pipe(concat("source/dist/css/vmv.min.css"))
+		.pipe(cssmin())
+		.pipe(gulp.dest("."));
+};
+
+
 //gulp.task("min:css", function () {
 //	return gulp.src(["source/css/**/*.css", "!source/css/**/*.min.css"])
 //		.pipe(concat(paths.concatCssDest))
@@ -125,5 +133,5 @@ var functionService = function (done) {
 // Создание задачи в Visual Studio
 // Tasks Manager (Диспетчер выполнения задач)
 gulp.task('run_service',
-	gulp.series(functionSass, functionService, cssClean));
+	gulp.series(functionSass, functionService, minCss, cssClean));
 
