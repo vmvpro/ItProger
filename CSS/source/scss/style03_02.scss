@@ -1,3 +1,7 @@
-﻿body{
-	//background-image: url(/source/img/background.jpg);
+﻿body {
+	// Задний фон картинкой(повторяющийся)
+	//background-image: url(/source/img/css3.jpg);
+	//------------------------------------------
+	// Задний фон картинкой (неповторяющийся)
+	//background: url(/source/img/css3.jpg) no-repeat top center;
 }
