@@ -4,6 +4,7 @@
 	//------------------------------------------
 	// Задний фон картинкой (неповторяющийся)
 	//background: url(/source/img/css3.jpg) no-repeat top center;
+	margin: 10px;
 }
 
 span {
@@ -24,4 +25,50 @@ span {
 	text-align:center;
 	border: 5px solid #ff0000;
 }
+
+.text-vmv-p{
+	text-decoration: underline;
+	color: #b200ff;
+	font-size: large;
+	font-family:'Times New Roman', Times, serif;
+	text-transform:capitalize;	
+	font-style:oblique;
+	font-weight:bold;
+}
+
+%figure {
+	background: #71b8eb;
+	width: 200px;
+	height: 200px;
+	border: 5px solid #0026ff;
+	border-radius: 100px;
+	text-align: center;
+	line-height: 180px;
+	z-index: 1;
+}
+
+#layerFirst {
+	@extend %figure;
+	position: relative;
+}
+
+#layerSecond {
+	@extend %figure;
+	position: absolute;
+	left: 220px;
+	top: 10px;
+}
+
+#layerThird {
+	@extend %figure;
+	position: relative;
+	left: 100px;
+	top: -100px;
+}
+
+
+
+
+
+
 
