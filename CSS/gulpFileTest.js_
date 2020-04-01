@@ -1,0 +1,241 @@
+﻿var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
+var sass = require('gulp-sass');
+
+var rimraf = require("rimraf");
+var concat = require("gulp-concat");
+var cssmin = require("gulp-cssmin");
+var uglify = require("gulp-uglify");
+var log = require('fancy-log');
+var cleanFiles = require('gulp-clean');
+var del = require('del');
+
+
+
+var htmlFile = {
+	Name: "index_03_AddStyles.html"
+};
+
+var nameFileCss = "style03";
+
+var paths = {
+	//webroot: "./wwwroot/"
+	webroot: "source/"
+};
+
+paths.js = paths.webroot + "js/**/*.js";
+paths.minJs = paths.webroot + "js/**/*.min.js";
+
+paths.css = paths.webroot + "css/**/*.css";
+paths.minCss = paths.webroot + "css/**/*.min.css";
+
+//---------------------------------------------------------
+paths.concatJsDest = paths.webroot + "js/*.min.js";
+paths.concatJsMapDest = paths.webroot + "js/*.min.map";
+
+paths.concatCssDest = paths.webroot + "css/*.min.css";
+paths.concatCssMapDest = paths.webroot + "css/*.min.map";
+//---------------------------------------------------------
+
+//gulp.task("clean:js", function (done) {
+//	rimraf(paths.concatJsDest, done);
+//});
+
+function cssCleanFunc(done) {
+	rimraf("source/scss/*.min.css", done);
+	rimraf("source/scss/*.map", done);
+	log('cssCleanFunc');
+};
+
+var cssClean = function (done) {
+	rimraf("source/scss/*.min.css", done);
+	rimraf("source/scss/*.map", done);
+	log('cssClean');
+};
+
+
+
+//gulp.task("clean:css", function (done) {
+//	rimraf("source/scss/*.min.css", done);
+//	rimraf("source/scss/*.map", done);
+//});
+
+//gulp.task('Clean: css, js',
+//	gulp.series('clean:css', 'clean:css'));
+
+//----------------------------------------------------------------
+
+var cleanTemp = 
+
+var cleanFilesObj = function ()
+{
+	return gulp.src("source/css_/*.css")
+		.pipe(cleanFiles());
+};
+
+var cleanFilesObj2 = function () {
+	//return del('"source/css_/*.css');
+	return gulp.src("source/css_/*.css")
+		.pipe(del());
+};
+
+gulp.task('cleanFilesObj2', cleanFilesObj2);
+
+
+gulp.task('cleanFilesObj', function () {
+	return del(['"source/css_/**', '!"source/css_/*.css3']);
+	//return gulp.src("source/css_/*.css")
+	//	.pipe(cleanFiles());
+});
+
+var cssMin = function () {
+	return gulp.src(["source/css/03/*.css", "!source/css/03/*.min.css"])
+		//.pipe(concat("source/css_/" + nameFileCss + ".min.css"))
+		.pipe(concat(nameFileCss + ".min.css"))
+		.pipe(cssmin())
+		//.pipe(gulp.dest("."))
+		.pipe(gulp.dest("source/css_"))
+
+		;
+
+};
+
+
+//gulp.task("min:css", function () {
+//	return gulp.src(["source/css/**/*.css", "!source/css/**/*.min.css"])
+//		.pipe(concat(paths.concatCssDest))
+//		.pipe(cssmin())
+//		.pipe(gulp.dest("."));
+//});
+
+
+//gulp.task("min:js", function () {
+//	return gulp.src([paths.webroot + "js/**/*.js", "!" + paths.webroot + "js/**/*.min.js"], { base: "." })
+//		.pipe(concat(paths.concatJsDest))
+//		.pipe(uglify())
+//		.pipe(gulp.dest(""));
+//});
+
+//gulp.task("Min: css, js",
+//	gulp.series("min:css", "min:js"));
+
+//----------------------------------------------------------------
+var functionSass = function (done) {
+
+	// Папка, где сохраняются файлы *.scss 
+	// (ProjectCustomerDevelop/scss)
+	gulp.src("source/scss/*.scss")
+
+		//параметр для минификации - compressed
+		.pipe(sass({ outputStyle: 'expanded' }))
+
+		//Расположение преобразованных файлов *.css 
+		.pipe(gulp.dest("source/css/03"))
+
+		// соединение веб-браузера
+		.pipe(browserSync.stream());
+
+	//gulp.log("sdasd");
+
+	done();
+
+}
+
+
+
+var file_ = function () {
+
+};
+
+var functionService = function (done) {
+
+	browserSync.init({
+		//server: {
+		//	baseDir: "./"
+		//}
+		//files: ["source/dist/css/vmv.min.css"],
+
+		server: {
+			baseDir: "./",
+			index: htmlFile.Name
+		}
+		//socket: {
+		//	domain: "localhost:41525"
+		//}
+		//port: 41525
+		//server: ""
+		//ui: "port: 41525" 
+		//proxy: "http://localhost:41525"
+		//proxy: "http://localhost:41525/03_CSS3_AddStyles.html"
+
+
+	}
+
+		// отклчение уведомлений сервера, 
+		//{ notify: true } 
+	);
+
+	// В данном случае, файл в корневом 
+	// размецении проекта
+
+	//---------------------------------------------------
+	// Подключение слежение за файлами
+	//gulp.watch(
+	//	"source/scss/*.scss",
+	//	gulp.series(functionSass, cssMin, cssClean));
+
+	//gulp.watch(
+	//	["source/css_/*.css"],
+	//	gulp.series(cssClean));
+
+	gulp.watch(
+		["source/scss/*.scss"],
+		gulp.series(cleanFilesObj, functionSass, cssMin));
+
+
+
+	//gulp.watch("source/scss/*.scss", gulp.series(functionSass))
+	//	.on('all', () => {
+	//		log('on change');
+	//		cssCleanFunc(done);
+	//		gulp.series(cssMin, cssClean);
+	//		done();
+	//	});
+
+	//---------------------------------------------------
+
+	//minCss,
+
+	//gulp.watch(
+	//	"source/css_/" + nameFileCss + ".min.css",
+	//	gulp.series(functionSass, cssMin, cssClean));
+
+	//gulp.watch("source/css_/" + nameFileCss + ".min.css")
+	//	.on('change', () => {
+	//		browserSync.reload("");
+	//		done();
+	//	});
+
+	//gulp.watch("source/css/" + nameFileCss + ".min.css",
+	//	gulp.series(minCss));
+
+	gulp.watch([htmlFile.Name, "source/css_/*.css"])
+		.on('all', () => {
+			browserSync.reload([htmlFile.Name]);
+			done();
+		});
+
+	//gulp.watch("*.html")
+	//	.on('change', () => {
+	//		browserSync.reload("");
+	//		done();
+	//	});
+
+	done();
+}
+
+// Создание задачи в Visual Studio
+// Tasks Manager (Диспетчер выполнения задач)
+gulp.task('run_service',
+	gulp.series(cleanFilesObj, functionSass, functionService, cssMin, cssClean));
+
