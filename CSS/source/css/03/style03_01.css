@@ -1,0 +1,68 @@
+@charset "UTF-8";
+.paddBox {
+  background: bisque;
+  width: 100%;
+  margin: 3%;
+}
+
+.paddBox.light {
+  color: blue;
+}
+
+.paddBox.green {
+  color: red;
+}
+
+.links p:first-child {
+  background: red;
+  color: white;
+  margin: 8px;
+  float: left;
+}
+
+div p:first-child {
+  background: blue;
+  color: white;
+  margin: 8px;
+  float: left;
+}
+
+.circle {
+  float: left;
+  border: 1px solid aqua;
+  border-radius: 50%;
+  background: blueviolet;
+  color: white;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  /*Центрирует объект по центру*/
+  text-align: center;
+  line-height: 50px;
+}
+
+.boxFlex {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  color: white;
+  border: 1px solid aqua;
+  /*border-radius: 50%;*/
+  border-radius: calc(width/2);
+  background: blueviolet;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxFlex.one {
+  display: flex;
+  width: 80px;
+  height: 50px;
+  color: white;
+  border: 2px solid aqua;
+  /*border-radius: 50%;*/
+  border-radius: calc(width/2);
+  background: blueviolet;
+  align-items: center;
+  justify-content: center;
+}

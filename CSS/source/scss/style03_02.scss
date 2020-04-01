@@ -1,0 +1,27 @@
+﻿body {
+	// Задний фон картинкой(повторяющийся)
+	// background-image: url(/source/img/css3.jpg);
+	//------------------------------------------
+	// Задний фон картинкой (неповторяющийся)
+	//background: url(/source/img/css3.jpg) no-repeat top center;
+}
+
+span {
+	border-width: 6px;
+	border-color: #ff0000;
+	border-style: dotted;
+	// --------------------------
+	border: 6px dotted #ff0000;
+}
+.divBoxMargin {
+	/*display:inline;*/
+	margin: 50px 0px 50px 20px;
+	border: 5px solid #b200ff;
+}
+
+.divBoxPadding {
+	display: block;
+	text-align:center;
+	border: 5px solid #ff0000;
+}
+
