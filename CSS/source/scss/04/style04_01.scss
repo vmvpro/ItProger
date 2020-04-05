@@ -3,6 +3,11 @@ body {
 
 }
 
+*{
+	margin:0;
+	padding:0;
+}
+
 #example {
 	position: relative;
 }
@@ -17,4 +22,25 @@ body {
 	z-index: 1000;
 	left: 50;
 	background-color: #cba9a9;
+}
+
+p.circle {
+	background-color: #9bab98;
+
+
+	color: #fff;
+	margin: 10px;
+	float: left;
+}
+$dim:5px;
+
+.circle:hover {
+	cursor: pointer;
+	border-radius: $dim;
+	margin-left: $dim;
+	margin-top: $dim;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	transition: all 600ms ease;
 }
