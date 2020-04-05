@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="index_01_BasicSyntax.html" />
     <Content Include="index_02_Selectors.html" />
+    <Content Include="index_04_HoverEffects.html" />
     <Content Include="index_03_AddStyles.html" />
     <Content Include="gulpFile.js" />
     <Content Include="source\bootstrap\dist\css\bootstrap-grid.css" />
@@ -114,6 +115,9 @@
     <Content Include="source\css\02\style02.css" />
     <Content Include="source\css\03\style03_01.css" />
     <Content Include="source\css\03\style03_02.css" />
+    <Content Include="source\css\04\style04.min.css" />
+    <Content Include="source\css\04\style04_01.css" />
+    <Content Include="source\css\04\style04_02.css" />
     <Content Include="source\img\01_IiProger.jpg" />
     <Content Include="source\img\01_sunset.jpg" />
     <Content Include="source\img\01_sunset.png" />
@@ -249,8 +253,10 @@
     <Content Include="source\bootstrap\scss\utilities\_text.scss" />
     <Content Include="source\bootstrap\scss\utilities\_visibility.scss" />
     <Content Include="source\bootstrap\scss\vendor\_rfs.scss" />
-    <Content Include="source\scss\style03_01.scss" />
-    <Content Include="source\scss\style03_02.scss" />
+    <Content Include="source\scss\03\style03_01.scss" />
+    <Content Include="source\scss\03\style03_02.scss" />
+    <Content Include="source\scss\04\style04_01.scss" />
+    <Content Include="source\scss\04\style04_02.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -259,7 +265,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="source\css_\" />
     <Folder Include="source\js\" />
   </ItemGroup>
   <PropertyGroup>

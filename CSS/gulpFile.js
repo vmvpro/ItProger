@@ -11,12 +11,13 @@ var log = require('fancy-log');
 //var del = require('del');
 
 
+var number = "04";
 
 var htmlFile = {
-	Name: "index_03_AddStyles.html"
+	Name: "index_04_HoverEffects.html"
 };
 
-var nameFileCss = "style03";
+var nameFileCss = "style" + number;
 
 var paths = {
 	//webroot: "./wwwroot/"
@@ -38,42 +39,23 @@ paths.concatCssMapDest = paths.webroot + "css/*.min.map";
 //---------------------------------------------------------
 
 var cssClean = function (done) {
-	rimraf("source/scss/*.min.css", done);
-	rimraf("source/scss/*.map", done);
-	log('cssClean');
+	rimraf("source/scss/" + number +"/*.min.css", done);
+	rimraf("source/scss/" + number +"/*.map", done);
+	//log('cssClean не происходит закомментировано');
 };
 
-//var deleteFiles = function() {
-
-//	return del(['source/css_/*.css', '!source/css_/*.vmv']);
-//	log('Delete files');
-//};
-
-//var deleteFiles = () => {
-//	return del(['source/css_/*.css', 'source/scss/*.css', '!source/css_/*.vmv']);
-//}
-
-//gulp.task('deleteFiles', deleteFiles);
-
-
-//gulp.task("clean:css", function (done) {
-//	rimraf("source/scss/*.min.css", done);
-//	rimraf("source/scss/*.map", done);
-//});
-
-//gulp.task('Clean: css, js',
-//	gulp.series('clean:css', 'clean:css'));
 
 //----------------------------------------------------------------
 
-
 var cssMin = function () {
-	return gulp.src(["source/css/03/*.css", "!source/css/03/*.min.css"])
+	return gulp
+		//.src(["source/css/" + number + "/*.css", "!source/css/" + number + "/*.min.css"])
+		.src(["source/css/" + number + "/*.css", "!source/css/" + number + "/*.min.css"])
 		//.pipe(concat("source/css_/" + nameFileCss + ".min.css"))
 		.pipe(concat(nameFileCss + ".min.css"))
 		.pipe(cssmin())
 		//.pipe(gulp.dest("."))
-		.pipe(gulp.dest("source/css_"))
+		.pipe(gulp.dest("source/css/" + number))
 
 		;
 
@@ -86,14 +68,16 @@ var functionSass = function (done) {
 
 	// Папка, где сохраняются файлы *.scss 
 	// (ProjectCustomerDevelop/scss)
-	gulp.src("source/scss/*.scss")
+	//gulp.src(["source/css/" + number + "/*min.css","source/scss/" + number + "/*.scss"])
+	//gulp.src(["source/css/" + number + "/*min.css"])
 		//.pipe(deleteFiles)
 
+	gulp.src(["source/scss/" + number + "/*.scss"])
 		//параметр для минификации - compressed
 		.pipe(sass({ outputStyle: 'expanded' }))
 
 		//Расположение преобразованных файлов *.css 
-		.pipe(gulp.dest("source/css/03"))
+		.pipe(gulp.dest("source/css/" + number))
 
 		// соединение веб-браузера
 		.pipe(browserSync.stream());
@@ -129,20 +113,12 @@ var functionService = function (done) {
 	//---------------------------------------------------
 	// Подключение слежение за файлами
 	gulp.watch(
-		"source/scss/*.scss",
+		["source/scss/" + number + "/*.scss"],
 		gulp.series(functionSass, cssMin, cssClean));
-
-	//gulp.watch("source/scss/*.scss", gulp.series(functionSass))
-	//	.on('all', () => {
-	//		log('on change');
-	//		cssCleanFunc(done);
-	//		gulp.series(cssMin, cssClean);
-	//		done();
-	//	});
 
 	//---------------------------------------------------
 
-	gulp.watch(htmlFile.Name)
+	gulp.watch([htmlFile.Name])
 		.on('change', () => {
 			browserSync.reload();
 			done();
@@ -154,5 +130,5 @@ var functionService = function (done) {
 // Создание задачи в Visual Studio
 // Tasks Manager (Диспетчер выполнения задач)
 gulp.task('run_service',
-	gulp.series(functionSass, functionService, cssMin, cssClean));
+	gulp.series(functionService, functionSass, cssMin, cssClean));
 
