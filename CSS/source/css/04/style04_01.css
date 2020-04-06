@@ -37,3 +37,91 @@ p.circle {
   line-height: 40px;
   transition: all 600ms ease;
 }
+
+#id_a {
+  display: block;
+  margin-top: 100px;
+}
+
+a.span-01 {
+  display: block;
+  text-decoration: none;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.span-01:hover {
+  text-decoration: overline;
+  background: #ff6a00;
+}
+
+.span-01:active {
+  color: white;
+}
+
+/* Изначально работаем над всем списком в целом */
+#navbar_menu ul {
+  display: none;
+  background-color: #666;
+  position: absolute;
+  top: 100%;
+}
+
+/* При наведении на элемент список становиться блоком */
+#navbar_menu li:hover ul {
+  display: block;
+}
+
+/* Удаляем все отступы */
+#navbar_menu, #navbar_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Общий стиль для блока меню */
+#navbar_menu {
+  height: 30px;
+  background-color: #666;
+  padding-left: 25px;
+  min-width: 470px;
+}
+
+/* Стили для каждого из элементов */
+#navbar_menu li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+
+/* Стили для ссылок в элементах меню */
+#navbar_menu li a {
+  display: block;
+  padding: 6px;
+  width: 100px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Убираем позиционирование в элементах */
+#navbar_menu ul li {
+  float: none;
+}
+
+/* Эффект при наведении */
+#navbar_menu li:hover {
+  background-color: #f90;
+}
+
+img {
+  opacity: 1.0;
+  transition: all 1s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+}
+
+img:hover {
+  opacity: 0.4;
+}
