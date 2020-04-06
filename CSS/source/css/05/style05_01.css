@@ -22,3 +22,7 @@ div.box01 a:active {
 div a:active {
   color: #ffd800;
 }
+
+#box02 {
+  color: red;
+}
