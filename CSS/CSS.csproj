@@ -119,6 +119,8 @@
     <Content Include="source\css\04\style04.min.css" />
     <Content Include="source\css\04\style04_01.css" />
     <Content Include="source\css\04\style04_02.css" />
+    <Content Include="source\css\05\style05_01.css" />
+    <Content Include="source\css\05\style05_02.css" />
     <Content Include="source\img\01_IiProger.jpg" />
     <Content Include="source\img\01_sunset.jpg" />
     <Content Include="source\img\01_sunset.png" />
@@ -268,7 +270,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="source\css\05\" />
     <Folder Include="source\js\" />
   </ItemGroup>
   <PropertyGroup>

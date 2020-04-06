@@ -8,6 +8,27 @@ body {
 	padding:0;
 }
 
+div.box01 a:link {
+	color: red;
+}
+
+
+
+div.box01 a:hover {
+	color: #4800ff;
+}
+
+div.box01 a:visited {
+	color: aqua;
+}
+
+div.box01 a:active {
+	color: red;
+}
+
+div a:active {
+	color: #ffd800;
+}
 
 
 
