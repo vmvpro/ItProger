@@ -1,1 +1,1 @@
-*{margin:0;padding:0}p{color:red}p.awesome{color:#0026ff;font-weight:700}
+@charset "UTF-8";@font-face{font-family:RobotoSlab;src:url(/source/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf)}*{margin:0;padding:0}p{color:red}p.myFont{color:#0026ff;font-family:RobotoSlab,cursive}

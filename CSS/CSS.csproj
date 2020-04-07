@@ -158,6 +158,8 @@
     <Content Include="source\fonts\font-awesome\sprites\brands.svg" />
     <Content Include="source\fonts\font-awesome\sprites\regular.svg" />
     <Content Include="source\fonts\font-awesome\sprites\solid.svg" />
+    <Content Include="source\fonts\Roboto_Slab\LICENSE.txt" />
+    <Content Include="source\fonts\Roboto_Slab\README.txt" />
     <Content Include="source\img\01_IiProger.jpg" />
     <Content Include="source\img\01_sunset.jpg" />
     <Content Include="source\img\01_sunset.png" />
@@ -304,6 +306,16 @@
     <Content Include="source\scss\06\style06_02.scss" />
     <Content Include="source\scss\07\style07_01.scss" />
     <Content Include="source\scss\07\style07_02.scss" />
+    <Content Include="source\fonts\Roboto_Slab\RobotoSlab-VariableFont_wght.ttf" />
+    <Content Include="source\fonts\Roboto_Slab\static\RobotoSlab-Black.ttf" />
+    <Content Include="source\fonts\Roboto_Slab\static\RobotoSlab-Bold.ttf" />
+    <Content Include="source\fonts\Roboto_Slab\static\RobotoSlab-ExtraBold.ttf" />
+    <Content Include="source\fonts\Roboto_Slab\static\RobotoSlab-ExtraLight.ttf" />
+    <Content Include="source\fonts\Roboto_Slab\static\RobotoSlab-Light.ttf" />
+    <Content Include="source\fonts\Roboto_Slab\static\RobotoSlab-Medium.ttf" />
+    <Content Include="source\fonts\Roboto_Slab\static\RobotoSlab-Regular.ttf" />
+    <Content Include="source\fonts\Roboto_Slab\static\RobotoSlab-SemiBold.ttf" />
+    <Content Include="source\fonts\Roboto_Slab\static\RobotoSlab-Thin.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
