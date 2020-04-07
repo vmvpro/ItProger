@@ -70,6 +70,7 @@
     <Content Include="index_01_BasicSyntax.html" />
     <Content Include="index_02_Selectors.html" />
     <Content Include="index_06_BackgroundImage - Копировать.html" />
+    <Content Include="index_10_BlockPositioning.html" />
     <Content Include="index_08_Blocks.html" />
     <Content Include="index_07_StylesForText.html" />
     <Content Include="index_05_PseudoElements.html" />
