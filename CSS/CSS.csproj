@@ -70,7 +70,8 @@
     <Content Include="index_01_BasicSyntax.html" />
     <Content Include="index_02_Selectors.html" />
     <Content Include="index_06_BackgroundImage - Копировать.html" />
-    <Content Include="index_12_SpecialStylesForLists.html" />
+    <Content Include="index_12_SpecialStylesForLists - Копировать.html" />
+    <Content Include="index_Work.html" />
     <Content Include="index_11_BlocksProperty.html" />
     <Content Include="index_10_BlockPositioning.html" />
     <Content Include="index_08_Blocks.html" />
@@ -334,6 +335,8 @@
     <Content Include="source\scss\11\style11_02.scss" />
     <Content Include="source\scss\12\style12_01.scss" />
     <Content Include="source\scss\12\style12_02.scss" />
+    <Content Include="source\scss\Work\styleWork_01.scss" />
+    <Content Include="source\scss\Work\styleWork_02.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -344,10 +347,9 @@
   <ItemGroup>
     <Folder Include="source\css\09\" />
     <Folder Include="source\css\12\" />
-    <Folder Include="source\css\13\" />
+    <Folder Include="source\css\Work\" />
     <Folder Include="source\js\" />
     <Folder Include="source\scss\09\" />
-    <Folder Include="source\scss\13\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

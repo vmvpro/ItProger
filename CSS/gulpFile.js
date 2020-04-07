@@ -11,10 +11,10 @@ var log = require('fancy-log');
 //var del = require('del');
 
 
-var number = "12";
+var number = "Work";
 
 var htmlFile = {
-	Name: "index_12_SpecialStylesForLists.html"
+	Name: "index_Work.html"
 };
 
 var nameFileCss = "style" + number;
