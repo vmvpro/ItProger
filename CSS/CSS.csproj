@@ -128,6 +128,8 @@
     <Content Include="source\css\06\style06_02.css" />
     <Content Include="source\css\07\style07_01.css" />
     <Content Include="source\css\07\style07_02.css" />
+    <Content Include="source\css\08\style08_01.css" />
+    <Content Include="source\css\08\style08_02.css" />
     <Content Include="source\fonts\font-awesome\css\all.css" />
     <Content Include="source\fonts\font-awesome\css\all.min.css" />
     <Content Include="source\fonts\font-awesome\css\brands.css" />
@@ -327,7 +329,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="source\css\08\" />
     <Folder Include="source\css\09\" />
     <Folder Include="source\css\10\" />
     <Folder Include="source\js\" />
