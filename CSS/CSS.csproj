@@ -171,6 +171,16 @@
     <Content Include="source\fonts\font-awesome\sprites\solid.svg" />
     <Content Include="source\fonts\Roboto_Slab\LICENSE.txt" />
     <Content Include="source\fonts\Roboto_Slab\README.txt" />
+    <Content Include="source\images\awesome-ico.png" />
+    <Content Include="source\images\body.png" />
+    <Content Include="source\images\entry-img1.png" />
+    <Content Include="source\images\entry-img2.png" />
+    <Content Include="source\images\entry-img3.png" />
+    <Content Include="source\images\entry-img4.png" />
+    <Content Include="source\images\entry-img5.png" />
+    <Content Include="source\images\header.png" />
+    <Content Include="source\images\save-ico.png" />
+    <Content Include="source\images\starter-ico.png" />
     <Content Include="source\img\01_IiProger.jpg" />
     <Content Include="source\img\01_sunset.jpg" />
     <Content Include="source\img\01_sunset.png" />
