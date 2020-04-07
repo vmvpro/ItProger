@@ -11,10 +11,10 @@ var log = require('fancy-log');
 //var del = require('del');
 
 
-var number = "05";
+var number = "06";
 
 var htmlFile = {
-	Name: "index_05_PseudoElements.html"
+	Name: "index_06_BackgroundImage.html"
 };
 
 var nameFileCss = "style" + number;
@@ -41,7 +41,6 @@ paths.concatCssMapDest = paths.webroot + "css/*.min.map";
 var cssClean = function (done) {
 	rimraf("source/scss/" + number +"/*.min.css", done);
 	rimraf("source/scss/" + number +"/*.map", done);
-	//log('cssClean не происходит закомментировано');
 };
 
 
@@ -49,29 +48,21 @@ var cssClean = function (done) {
 
 var cssMin = function () {
 	return gulp
-		//.src(["source/css/" + number + "/*.css", "!source/css/" + number + "/*.min.css"])
 		.src(["source/css/" + number + "/*.css", "!source/css/" + number + "/*.min.css"])
-		//.pipe(concat("source/css_/" + nameFileCss + ".min.css"))
 		.pipe(concat(nameFileCss + ".min.css"))
 		.pipe(cssmin())
-		//.pipe(gulp.dest("."))
 		.pipe(gulp.dest("source/css/" + number))
 
 		;
 
 };
 
+
+
 //----------------------------------------------------------------
 var functionSass = function (done) {
 
-	//deleteFiles;
-
 	// Папка, где сохраняются файлы *.scss 
-	// (ProjectCustomerDevelop/scss)
-	//gulp.src(["source/css/" + number + "/*min.css","source/scss/" + number + "/*.scss"])
-	//gulp.src(["source/css/" + number + "/*min.css"])
-		//.pipe(deleteFiles)
-
 	gulp.src(["source/scss/" + number + "/*.scss"])
 		//параметр для минификации - compressed
 		.pipe(sass({ outputStyle: 'expanded' }))
@@ -82,13 +73,13 @@ var functionSass = function (done) {
 		// соединение веб-браузера
 		.pipe(browserSync.stream());
 
-	//gulp.log("sdasd");
-
 	done();
 
 }
 
-
+// Создание задачи в Visual Studio
+// Tasks Manager (Диспетчер выполнения задач)
+gulp.task('Files SCSS',	functionSass);
 
 var file_ = function () {
 
