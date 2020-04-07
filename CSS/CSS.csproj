@@ -131,6 +131,8 @@
     <Content Include="source\css\07\style07_02.css" />
     <Content Include="source\css\08\style08_01.css" />
     <Content Include="source\css\08\style08_02.css" />
+    <Content Include="source\css\10\style10_01.css" />
+    <Content Include="source\css\10\style10_02.css" />
     <Content Include="source\fonts\font-awesome\css\all.css" />
     <Content Include="source\fonts\font-awesome\css\all.min.css" />
     <Content Include="source\fonts\font-awesome\css\brands.css" />
@@ -322,6 +324,8 @@
     <Content Include="source\fonts\Roboto_Slab\static\RobotoSlab-Thin.ttf" />
     <Content Include="source\scss\08\style08_01.scss" />
     <Content Include="source\scss\08\style08_02.scss" />
+    <Content Include="source\scss\10\style10_01.scss" />
+    <Content Include="source\scss\10\style10_02.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -331,16 +335,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="source\css\09\" />
-    <Folder Include="source\css\10 - Копировать - Копировать - Копировать\" />
-    <Folder Include="source\css\10 - Копировать - Копировать\" />
-    <Folder Include="source\css\10 - Копировать\" />
-    <Folder Include="source\css\10\" />
+    <Folder Include="source\css\11\" />
+    <Folder Include="source\css\12\" />
+    <Folder Include="source\css\13\" />
     <Folder Include="source\js\" />
     <Folder Include="source\scss\09\" />
-    <Folder Include="source\scss\10 - Копировать - Копировать - Копировать\" />
-    <Folder Include="source\scss\10 - Копировать - Копировать\" />
-    <Folder Include="source\scss\10 - Копировать\" />
-    <Folder Include="source\scss\10\" />
+    <Folder Include="source\scss\11\" />
+    <Folder Include="source\scss\12\" />
+    <Folder Include="source\scss\13\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

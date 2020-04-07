@@ -1,0 +1,1 @@
+footer,header{height:50px;width:100%}header{background-color:#6c6c6c;color:#fff;position:fixed}#nav{float:left;background-color:#56c1ff;width:200px;height:500px;margin:50px 10px 10px}#content{float:left;margin-top:50px;width:calc(100%-220px);background-color:#4fd091}footer{clear:both;background-color:red}
