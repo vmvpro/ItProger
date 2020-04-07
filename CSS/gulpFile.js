@@ -11,7 +11,7 @@ var log = require('fancy-log');
 //var del = require('del');
 
 
-var number = "06";
+var number = "07";
 
 var htmlFile = {
 	Name: "index_06_BackgroundImage.html"

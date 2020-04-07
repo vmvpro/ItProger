@@ -69,7 +69,8 @@
   <ItemGroup>
     <Content Include="index_01_BasicSyntax.html" />
     <Content Include="index_02_Selectors.html" />
-    <Content Include="index_06_BackgroundImage.html" />
+    <Content Include="index_06_BackgroundImage - Копировать.html" />
+    <Content Include="index_07_StylesForText.html" />
     <Content Include="index_05_PseudoElements.html" />
     <Content Include="index_04_HoverEffects.html" />
     <Content Include="index_03_AddStyles.html" />
@@ -122,6 +123,8 @@
     <Content Include="source\css\04\style04_02.css" />
     <Content Include="source\css\05\style05_01.css" />
     <Content Include="source\css\05\style05_02.css" />
+    <Content Include="source\css\06\style06_01.css" />
+    <Content Include="source\css\06\style06_02.css" />
     <Content Include="source\img\01_IiProger.jpg" />
     <Content Include="source\img\01_sunset.jpg" />
     <Content Include="source\img\01_sunset.png" />
@@ -265,6 +268,8 @@
     <Content Include="source\scss\05\style05_02.scss" />
     <Content Include="source\scss\06\style06_01.scss" />
     <Content Include="source\scss\06\style06_02.scss" />
+    <Content Include="source\scss\07\style07_01.scss" />
+    <Content Include="source\scss\07\style07_02.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -273,13 +278,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="source\css\06\" />
     <Folder Include="source\css\07\" />
     <Folder Include="source\css\08\" />
     <Folder Include="source\css\09\" />
     <Folder Include="source\css\10\" />
     <Folder Include="source\js\" />
-    <Folder Include="source\scss\07\" />
     <Folder Include="source\scss\08\" />
     <Folder Include="source\scss\09\" />
     <Folder Include="source\scss\10\" />
