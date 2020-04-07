@@ -330,9 +330,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="source\css\09\" />
+    <Folder Include="source\css\10 - Копировать - Копировать - Копировать\" />
+    <Folder Include="source\css\10 - Копировать - Копировать\" />
+    <Folder Include="source\css\10 - Копировать\" />
     <Folder Include="source\css\10\" />
     <Folder Include="source\js\" />
     <Folder Include="source\scss\09\" />
+    <Folder Include="source\scss\10 - Копировать - Копировать - Копировать\" />
+    <Folder Include="source\scss\10 - Копировать - Копировать\" />
+    <Folder Include="source\scss\10 - Копировать\" />
     <Folder Include="source\scss\10\" />
   </ItemGroup>
   <PropertyGroup>
