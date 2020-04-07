@@ -1,29 +1,75 @@
-﻿body {
+﻿$heightHeader: 50px;
+$koef: 10px;
+
+body {
 }
 
 //-------------------
+/**{
+	padding:0;
+	margin:0;
+}*/
+//-----------------------------------
+header {
+	background-color: #808080;
+	height: $heightHeader;
+	color: #eaeaea;
+	padding: 0px;
 
-.vmvDiv{
-	color:blue;
 }
-/*div span{
-	width:50px;
-	height:100px;
-	color:blue;
-	border: 1px solid red;
-}*/
-
-/*span {
-	width: 50px;
-	height: 100px;
-	color: blue;
-	border: 1px solid red;
-}*/
-
-.spanBlock {
+//-----------------------------------
+.logo {
 	display: block;
-	height: 40px;
-	width: 80px;
-	border: 1px solid red;
-	overflow:auto;
+	float: left;
+	width: 70px;
+	height: $heightHeader;
+	text-align: center;
+	//border: 1px solid red;
+	//overflow: hidden;
+	//padding: calc(10px * $koef);
+	padding: $koef;
+}
+//-----------------------------------
+.menu {
+	display:inline-block;
+	float: left;
+	color: #ffffff;
+	padding-top: $koef;
+	//border: 1px solid red;
+	height: $heightHeader;
+	width: auto;
+}
+
+.menu ul{
+	padding:0;
+	margin:0;
+}
+
+.menu li {
+	display: block;
+	float: left;
+	//border: 1px solid red;
+	position: relative;
+	list-style-position: outside;
+	padding-left: 20px
+}
+//-----------------------------------
+.account {
+	float: right;
+	padding-top: $koef;
+	//border: 1px solid red;
+	height: $heightHeader;
+}
+
+.account ul{
+	padding:0;
+	margin:0;
+}
+
+.account li {
+	
+	display: block;
+	float: left;
+	//border: 1px solid red;
+	padding-right:15px;
 }

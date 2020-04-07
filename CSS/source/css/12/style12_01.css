@@ -1,0 +1,58 @@
+/**{
+	padding:0;
+	margin:0;
+}*/
+header {
+  background-color: #808080;
+  height: 50px;
+  color: #eaeaea;
+  padding: 0px;
+}
+
+.logo {
+  display: block;
+  float: left;
+  width: 70px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu {
+  display: inline-block;
+  float: left;
+  color: #ffffff;
+  padding-top: 10px;
+  height: 50px;
+  width: auto;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: block;
+  float: left;
+  position: relative;
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.account {
+  float: right;
+  padding-top: 10px;
+  height: 50px;
+}
+
+.account ul {
+  padding: 0;
+  margin: 0;
+}
+
+.account li {
+  display: block;
+  float: left;
+  padding-right: 15px;
+}
