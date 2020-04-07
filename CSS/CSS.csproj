@@ -125,6 +125,39 @@
     <Content Include="source\css\05\style05_02.css" />
     <Content Include="source\css\06\style06_01.css" />
     <Content Include="source\css\06\style06_02.css" />
+    <Content Include="source\css\07\style07_01.css" />
+    <Content Include="source\css\07\style07_02.css" />
+    <Content Include="source\fonts\font-awesome\css\all.css" />
+    <Content Include="source\fonts\font-awesome\css\all.min.css" />
+    <Content Include="source\fonts\font-awesome\css\brands.css" />
+    <Content Include="source\fonts\font-awesome\css\brands.min.css" />
+    <Content Include="source\fonts\font-awesome\css\fontawesome.css" />
+    <Content Include="source\fonts\font-awesome\css\fontawesome.min.css" />
+    <Content Include="source\fonts\font-awesome\css\regular.css" />
+    <Content Include="source\fonts\font-awesome\css\regular.min.css" />
+    <Content Include="source\fonts\font-awesome\css\solid.css" />
+    <Content Include="source\fonts\font-awesome\css\solid.min.css" />
+    <Content Include="source\fonts\font-awesome\css\svg-with-js.css" />
+    <Content Include="source\fonts\font-awesome\css\svg-with-js.min.css" />
+    <Content Include="source\fonts\font-awesome\css\v4-shims.css" />
+    <Content Include="source\fonts\font-awesome\css\v4-shims.min.css" />
+    <Content Include="source\fonts\font-awesome\js\all.js" />
+    <Content Include="source\fonts\font-awesome\js\all.min.js" />
+    <Content Include="source\fonts\font-awesome\js\brands.js" />
+    <Content Include="source\fonts\font-awesome\js\brands.min.js" />
+    <Content Include="source\fonts\font-awesome\js\conflict-detection.js" />
+    <Content Include="source\fonts\font-awesome\js\conflict-detection.min.js" />
+    <Content Include="source\fonts\font-awesome\js\fontawesome.js" />
+    <Content Include="source\fonts\font-awesome\js\fontawesome.min.js" />
+    <Content Include="source\fonts\font-awesome\js\regular.js" />
+    <Content Include="source\fonts\font-awesome\js\regular.min.js" />
+    <Content Include="source\fonts\font-awesome\js\solid.js" />
+    <Content Include="source\fonts\font-awesome\js\solid.min.js" />
+    <Content Include="source\fonts\font-awesome\js\v4-shims.js" />
+    <Content Include="source\fonts\font-awesome\js\v4-shims.min.js" />
+    <Content Include="source\fonts\font-awesome\sprites\brands.svg" />
+    <Content Include="source\fonts\font-awesome\sprites\regular.svg" />
+    <Content Include="source\fonts\font-awesome\sprites\solid.svg" />
     <Content Include="source\img\01_IiProger.jpg" />
     <Content Include="source\img\01_sunset.jpg" />
     <Content Include="source\img\01_sunset.png" />
@@ -144,6 +177,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
+    <Content Include="libman.json" />
     <None Include="packages.config" />
     <Content Include="source\bootstrap\dist\css\bootstrap-grid.css.map" />
     <Content Include="source\bootstrap\dist\css\bootstrap-grid.min.css.map" />
@@ -278,7 +312,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="source\css\07\" />
     <Folder Include="source\css\08\" />
     <Folder Include="source\css\09\" />
     <Folder Include="source\css\10\" />

@@ -14,7 +14,7 @@ var log = require('fancy-log');
 var number = "07";
 
 var htmlFile = {
-	Name: "index_06_BackgroundImage.html"
+	Name: "index_07_StylesForText.html"
 };
 
 var nameFileCss = "style" + number;

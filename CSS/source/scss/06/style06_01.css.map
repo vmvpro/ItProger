@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "style06_01.css",
+	"sources": [
+		"style06_01.scss"
+	],
+	"mappings": "AAKA,AAAA,CAAC,AAAA,CACA,MAAM,CAAC,CAAE,CACT,OAAO,CAAC,CAAE,CACV",
+	"names": []
+}
