@@ -11,10 +11,10 @@ var log = require('fancy-log');
 //var del = require('del');
 
 
-var number = "10";
+var number = "11";
 
 var htmlFile = {
-	Name: "index_10_BlockPositioning.html"
+	Name: "index_11_BlocksProperty.html"
 };
 
 var nameFileCss = "style" + number;

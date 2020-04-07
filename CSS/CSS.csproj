@@ -70,6 +70,7 @@
     <Content Include="index_01_BasicSyntax.html" />
     <Content Include="index_02_Selectors.html" />
     <Content Include="index_06_BackgroundImage - Копировать.html" />
+    <Content Include="index_11_BlocksProperty.html" />
     <Content Include="index_10_BlockPositioning.html" />
     <Content Include="index_08_Blocks.html" />
     <Content Include="index_07_StylesForText.html" />
@@ -326,6 +327,8 @@
     <Content Include="source\scss\08\style08_02.scss" />
     <Content Include="source\scss\10\style10_01.scss" />
     <Content Include="source\scss\10\style10_02.scss" />
+    <Content Include="source\scss\11\style11_01.scss" />
+    <Content Include="source\scss\11\style11_02.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -340,7 +343,6 @@
     <Folder Include="source\css\13\" />
     <Folder Include="source\js\" />
     <Folder Include="source\scss\09\" />
-    <Folder Include="source\scss\11\" />
     <Folder Include="source\scss\12\" />
     <Folder Include="source\scss\13\" />
   </ItemGroup>
