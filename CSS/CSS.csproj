@@ -134,6 +134,8 @@
     <Content Include="source\css\08\style08_02.css" />
     <Content Include="source\css\10\style10_01.css" />
     <Content Include="source\css\10\style10_02.css" />
+    <Content Include="source\css\11\style11_01.css" />
+    <Content Include="source\css\11\style11_02.css" />
     <Content Include="source\fonts\font-awesome\css\all.css" />
     <Content Include="source\fonts\font-awesome\css\all.min.css" />
     <Content Include="source\fonts\font-awesome\css\brands.css" />
@@ -338,7 +340,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="source\css\09\" />
-    <Folder Include="source\css\11\" />
     <Folder Include="source\css\12\" />
     <Folder Include="source\css\13\" />
     <Folder Include="source\js\" />
