@@ -11,6 +11,10 @@ var log = require('fancy-log');
 //var del = require('del');
 
 
+//---------------------------------------------------------
+
+// Переменные
+
 var number = "Work";
 
 var htmlFile = {
@@ -19,77 +23,85 @@ var htmlFile = {
 
 var nameFileCss = "style" + number;
 
-var paths = {
+var source = {
 	//webroot: "./wwwroot/"
 	webroot: "source/"
 };
 
-paths.js = paths.webroot + "js/**/*.js";
-paths.minJs = paths.webroot + "js/**/*.min.js";
-
-paths.css = paths.webroot + "css/**/*.css";
-paths.minCss = paths.webroot + "css/**/*.min.css";
-
-//---------------------------------------------------------
-paths.concatJsDest = paths.webroot + "js/*.min.js";
-paths.concatJsMapDest = paths.webroot + "js/*.min.map";
-
-paths.concatCssDest = paths.webroot + "css/*.min.css";
-paths.concatCssMapDest = paths.webroot + "css/*.min.map";
 //---------------------------------------------------------
 
-var cssClean = function (done) {
-	rimraf("source/scss/" + number +"/*.min.css", done);
-	rimraf("source/scss/" + number +"/*.map", done);
+// Размещение файлов scss
+source.Scss = source.webroot + "scss/" + number + "/*.scss";
+
+// Размещение файлов scss, где при образовании файлов в css необходимо очищать
+source.ClearCssMinOfScss = source.webroot + "scss/" + number + "/*.min.css";
+source.ClearCssMapOfScss = source.webroot + "scss/" + number + "/*.map";
+
+// Размещение файлов которые требуется минимизировать
+// (получаются при обработке функции преобразовании файлов scss)
+source.Css = source.webroot + "css/" + number + "/*.css";
+source.CssMin = source.webroot + "css/" + number + "/*.min.cs";
+
+//Окончательная папка, где сохраняюся файлы css при минимизации
+source.distDirectoryPath = source.webroot + "css/" + number;
+
+//source.Js = source.webroot + "css/*.min.css";
+
+//---------------------------------------------------------
+
+// Функция для очистки ненужных файлов css после scss 
+var ClearCssOfScss = function (done) {
+	rimraf(source.ClearCssMinOfScss, done);
+	rimraf(source.ClearCssMapOfScss, done);
 };
 
+gulp.task('ClearCssOfScss', ClearCssOfScss);
 
 //----------------------------------------------------------------
 
+// Минимизация файлов css
 var cssMin = function () {
 	return gulp
-		.src(["source/css/" + number + "/*.css", "!source/css/" + number + "/*.min.css"])
+		.src([source.Css, "!" + source.CssMin])
+		// Имя файла при минимизации
 		.pipe(concat(nameFileCss + ".min.css"))
 		.pipe(cssmin())
-		.pipe(gulp.dest("source/css/" + number))
-
-		;
-
+		.pipe(gulp.dest(source.distDirectoryPath));
 };
 
-
+gulp.task('cssMin', cssMin);
 
 //----------------------------------------------------------------
+
+// Работа с файлами scss
 var functionSass = function (done) {
 
 	// Папка, где сохраняются файлы *.scss 
-	gulp.src(["source/scss/" + number + "/*.scss"])
+	gulp.src([source.Scss])
 		//параметр для минификации - compressed
 		.pipe(sass({ outputStyle: 'expanded' }))
 
 		//Расположение преобразованных файлов *.css 
-		.pipe(gulp.dest("source/css/" + number))
+		.pipe(gulp.dest(source.distDirectoryPath))
 
 		// соединение веб-браузера
 		.pipe(browserSync.stream());
 
 	done();
-
 }
 
 // Создание задачи в Visual Studio
 // Tasks Manager (Диспетчер выполнения задач)
-gulp.task('Files SCSS',	functionSass);
+gulp.task('FilesSCSS', functionSass);
 
-var file_ = function () {
 
-};
 
 var functionService = function (done) {
 
 	browserSync.init({
 		server: {
 			baseDir: "./",
+			// Переопределение файла Index при запуске сервера
 			index: htmlFile.Name
 		}
 	}
@@ -104,8 +116,8 @@ var functionService = function (done) {
 	//---------------------------------------------------
 	// Подключение слежение за файлами
 	gulp.watch(
-		["source/scss/" + number + "/*.scss"],
-		gulp.series(functionSass, cssMin, cssClean));
+		source.Scss,
+		gulp.series(functionSass, cssMin, ClearCssOfScss));
 
 	//---------------------------------------------------
 
@@ -121,5 +133,5 @@ var functionService = function (done) {
 // Создание задачи в Visual Studio
 // Tasks Manager (Диспетчер выполнения задач)
 gulp.task('run_service',
-	gulp.series(functionService, functionSass, cssMin, cssClean));
+	gulp.series(functionService, functionSass, cssMin, ClearCssOfScss));
 
