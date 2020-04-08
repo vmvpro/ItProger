@@ -8,7 +8,7 @@ body, html {
 }
 
 body {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 16px;
   font-family: arial, sans-serif;
   color: #808080;
@@ -42,15 +42,26 @@ a:hover {
   margin: 0 auto -279px;
 }
 
+.header {
+  background-image: url(../../images/header.png);
+  height: 58px;
+  padding-top: 29px;
+}
+
 .shell {
   margin: 0 auto;
   width: 950px;
 }
 
-.header {
-  background: url(../../images/header.png) repeat-x 0 0;
+#logo {
+  background: url(../../images/vmvpro_ava.jpg) no-repeat;
+  float: left;
   height: 58px;
-  padding: 29px 0 0 0;
+  width: 100px;
+  padding-top: 8px;
+  text-align: left;
+  display: block;
+  background-size: contain;
 }
 
 #navigation {

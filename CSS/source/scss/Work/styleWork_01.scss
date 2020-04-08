@@ -1,4 +1,6 @@
-﻿* {
+﻿$border: 1px solid red;
+
+* {
 	margin: 0;
 	padding: 0;
 }
@@ -8,7 +10,7 @@ body, html {
 }
 
 body {
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 16px;
 	font-family: arial, sans-serif;
 	color: #808080;
@@ -42,20 +44,48 @@ a:hover {
 	margin: 0 auto -279px;
 }
 
+.header {
+	background-image: url(../../images/header.png);
+	height: 58px;
+	padding-top: 29px;
+	//border: $border;
+	//overflow:hidden;
+}
+
 .shell {
 	margin: 0 auto;
 	width: 950px;
+	//border: $border;
+	//display: block;
+	
+	//height: 57px;
+	//clear:none;
 }
 
-.header {
-	background: url(../../images/header.png) repeat-x 0 0;
+
+#logo {
+	background: url(../../images/vmvpro_ava.jpg) no-repeat;
+	float: left;
+	//border: $border;
 	height: 58px;
-	padding: 29px 0 0 0;
+	width: 100px;
+	padding-top: 8px;
+	text-align: left;
+	display: block;
+	//height: auto;
+	background-size: contain;
+	//height:auto;
+	//overflow: no-content;
+}
+
+#logo img {
+	//height:40px;
 }
 
 #navigation {
 	float: right;
 	padding-top: 8px;
+	//border: $border;
 }
 
 #navigation ul {
@@ -69,6 +99,7 @@ a:hover {
 #navigation ul li {
 	float: left;
 	padding: 0 0 0 44px;
+	//border: $border;
 }
 
 #navigation ul li a {
