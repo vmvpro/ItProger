@@ -3,11 +3,10 @@ body {
 
 }
 
-*{
+/**{
 	margin:0;
 	padding:0;
-}
-
+}*/
 
 
 div.box01 a:link {
@@ -47,3 +46,139 @@ div a:visited {
 	font-size: 15px;
 }
 
+//----------------------------------
+// Блоки
+
+$border: 1px solid red;
+
+.block{
+	border: $border;
+	margin:0px;
+	//height:40px;
+	padding:15px;
+}
+
+.block.block01 {
+	//display: inline-block;
+	border: $border;
+}
+
+.block.block02 {
+	//display: inline-block;
+	border: $border;
+}
+
+.block01, .block02 {
+	display: block;
+	padding: 5px 20px;
+	float: left;
+	//display: inline-block;
+	border: $border;
+	border-collapse:collapse;
+}
+
+.clear-block{
+	clear:both;
+}
+
+//-------------------------------
+// Ссылка 
+
+.link{
+	display:block;
+	border:$border;
+}
+
+a.link01{
+	color: aqua;
+}
+
+a.link01:visited {
+	color: #b6ff00;
+	text-decoration: none;
+}
+
+/*a.link01:visited {
+	color: red;
+}*/
+
+a.link01:hover {
+	color: #ffd800;
+	text-decoration:none;
+}
+
+a.link01:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+
+
+
+
+.span_1 {
+	float:left;
+	padding-right: 50px;
+}
+
+.span_2{
+	display:block;
+}
+
+.p_vmv{
+	display: inline-block;
+	border: $border;
+}
+
+.spanListItem{
+	display:list-item;
+	border:$border;
+}
+
+.listDiv{
+	display:inline-block;
+}
+
+//---------
+.displayTable{
+	display:table;
+	margin-top:15px;
+}
+
+.row{
+	display:table-row;
+}
+
+.cell{
+	display:table-cell;
+	padding-right: 15px;
+}
+
+.listMenu{
+	//display:block;
+	padding-top:15px;
+}
+
+.listMenu li {
+	display: inline-block;
+	//display: block;
+	color: red;
+	//list-style:none;
+	border: $border;
+}
+
+.child-p p:first-child{
+	color:red;
+	font-weight:bold;
+}
+
+.imageBeforeAfter p:before {
+	content: url("https://itproger.com/img/favicon.ico");
+	vertical-align: middle;
+}
+
+.imageBeforeAfter p:after {
+	content: url("https://itproger.com/img/favicon.ico");
+	vertical-align:middle;
+}

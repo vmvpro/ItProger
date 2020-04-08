@@ -15,10 +15,10 @@ var log = require('fancy-log');
 
 // Переменные
 
-var number = "Work";
+var number = "05";
 
 var htmlFile = {
-	Name: "index_Work.html"
+	Name: "index_05_PseudoElements.html"
 };
 
 var nameFileCss = "style" + number;
