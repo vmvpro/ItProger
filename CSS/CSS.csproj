@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="index_01_BasicSyntax.html" />
     <Content Include="index_02_Selectors.html" />
+    <Content Include="index_06_FeedbackForm.html" />
     <Content Include="index_06_BlockPresentation.html" />
     <Content Include="index_06_BigTasks.html" />
     <Content Include="Lections\index_06_BackgroundImage - Копировать.html" />
@@ -132,6 +133,7 @@
     <Content Include="source\css\05\style05_02.css" />
     <Content Include="source\css\06\style06_01.css" />
     <Content Include="source\css\06\style06_02.css" />
+    <Content Include="source\css\06\style06_FeedbackForm.css" />
     <Content Include="source\css\06\style06_MyBlockPresentation.css" />
     <Content Include="source\css\07\style07_01.css" />
     <Content Include="source\css\07\style07_02.css" />
@@ -367,6 +369,7 @@
     <Content Include="source\scss\Lections\12\style12_02.scss" />
     <Content Include="source\scss\06\style06_03.scss" />
     <Content Include="source\scss\06\style06_MyBlockPresentation.scss" />
+    <Content Include="source\scss\06\style06_FeedbackForm.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

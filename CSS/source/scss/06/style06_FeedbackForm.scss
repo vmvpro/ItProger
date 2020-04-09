@@ -1,0 +1,178 @@
+﻿$border: 1px solid red;
+$shadow-block: 0 1px 5px 1px #a8a8a8;
+
+@font-face {
+	font-family: RobotoSlab;
+	src: url(../../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf );
+	font-weight: bold;
+}
+
+body {
+	background: #f2f2f2;
+	font-size:16px;
+}
+
+
+
+#feedbackForm {
+	background-color: #fafafa;
+	border: 1px solid #d2d2d2;
+	-webkit-box-shadow: 0 1px 0 1px #e5e7e8;
+	-moz-box-shadow: 0 1px 0 1px #e5e7e8;
+	box-shadow: 0 1px 0 1px #e5e7e8;
+	font-size: 1.1em;
+	color: #3e3e3e;
+	//padding: 3%;
+	float: left;
+	width: 80%;
+	//margin: 20px 22%;
+	margin-left: 8%;
+	margin-top: 8%;
+
+	border-radius:10px;
+	padding:20px;
+
+	
+}
+
+/*#feedbackForm main, #feedbackForm aside {
+	float: left;
+	width: 48%;
+	margin-right: 2%;
+	//border: $border;
+}*/
+
+h2 {
+	font-weight: lighter;
+	font-family: RobotoSlab;
+	border-bottom: 2px solid #4786a3;
+	display: inline-block;
+	color: #4786a3;
+	padding: 0 5px;
+}
+
+@media(min-width: 1201px) {
+
+	#feedbackForm main, #feedbackForm aside {
+		float: left;
+		width: 48%;
+		margin-right: 2%;
+	}
+
+	h2 {
+		color: #4786a3;
+		//font-size: 1.0em;
+	}
+}
+
+@media(max-width: 1200px) {
+	#feedbackForm main, #feedbackForm aside {
+		float: left;
+		width: 48%;
+		margin-right: 2%;
+	}
+
+	h2 {
+		color: blue;
+		//font-size: 1.0em;
+	}
+}
+
+@media(max-width: 1000px) {
+	#feedbackForm main, #feedbackForm aside {
+		float: left;
+		width: 96%;
+		margin-left: 2%;
+	}
+
+	h2 {
+		color: red;
+		//font-size: 1.0em;
+	}
+}
+
+
+
+
+
+
+
+
+form .label {
+	//float:left;
+	font-size: 1.2em;
+	margin-left: 10px;
+	color: #737272;
+	margin-bottom: 5px;
+	display: block;
+	font-family: RobotoSlab, serif;
+	cursor: text;
+	//width:500px;
+}
+
+form input, form textarea {
+	margin-bottom: 10px;
+	padding: 10px 2%;
+	border-radius: 7px;
+	border: 2px solid silver;
+	font-size: .9em;
+	width: 270px;
+	color: #4a4a4a;
+}
+
+#messageErrorUser {
+	color: #bf5858;
+	font-family: 'Roboto Slab',serif;
+	font-size: 1.1em;
+}
+
+.btn {
+	border: 2px solid #9c3e30;
+	font-size: 1em;
+	margin-top: 20px;
+	background: #ec6550;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+	display: inline-block;
+	padding: 7px 12px;
+	font-family: 'Roboto Slab',serif;
+}
+
+.btn:hover {
+	border: 2px solid #88372b;
+	background: #ba5242;
+}
+
+aside img {
+	width: 80%;
+	border-radius: 5px;
+	border: 2px solid #333;
+}
+
+aside span {
+	margin-top: 20px;
+	display: inline-block;
+	color: #626262;
+	font-family: 'Roboto Slab',serif;
+	font-size: 1.1em;
+}
+
+/*@media(min-width: 800px) {
+
+	#feedbackForm main, #feedbackForm aside {
+		float: left;
+		width: 48%;
+		margin-right: 2%;
+		border: $border;
+	}
+
+	h2 {
+		color: red;
+		font-size: 1.0em;
+	}
+}*/
+
+
+
+
