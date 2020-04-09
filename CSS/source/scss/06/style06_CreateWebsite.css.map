@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "style06_CreateWebsite.css",
+	"sources": [
+		"style06_CreateWebsite.scss"
+	],
+	"mappings": "AAGA,UAAU,CACT,WAAW,CAAE,UAAW,CACxB,GAAG,CAA+D,6DAAC,CACnE,WAAW,CAAE,IAAK",
+	"names": []
+}
