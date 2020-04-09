@@ -18,7 +18,7 @@ var log = require('fancy-log');
 var number = "06";
 
 var htmlFile = {
-	Name: "index_06_BigTasks.html"
+	Name: "index_06_BlockPresentation.html"
 };
 
 var nameFileCss = "style" + number;

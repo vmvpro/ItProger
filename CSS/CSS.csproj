@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="index_01_BasicSyntax.html" />
     <Content Include="index_02_Selectors.html" />
+    <Content Include="index_06_BlockPresentation.html" />
     <Content Include="index_06_BigTasks.html" />
     <Content Include="Lections\index_06_BackgroundImage - Копировать.html" />
     <Content Include="Lections\index_12_SpecialStylesForLists - Копировать.html" />
@@ -131,6 +132,7 @@
     <Content Include="source\css\05\style05_02.css" />
     <Content Include="source\css\06\style06_01.css" />
     <Content Include="source\css\06\style06_02.css" />
+    <Content Include="source\css\06\style06_MyBlockPresentation.css" />
     <Content Include="source\css\07\style07_01.css" />
     <Content Include="source\css\07\style07_02.css" />
     <Content Include="source\css\08\style08_01.css" />
@@ -180,6 +182,7 @@
     <Content Include="source\images\entry-img4.png" />
     <Content Include="source\images\entry-img5.png" />
     <Content Include="source\images\header.png" />
+    <Content Include="source\images\program_block_android.jpg" />
     <Content Include="source\images\save-ico.png" />
     <Content Include="source\images\starter-ico.png" />
     <Content Include="source\images\vmvpro_ava.jpg" />
@@ -363,6 +366,7 @@
     <Content Include="source\scss\Lections\12\style12_01.scss" />
     <Content Include="source\scss\Lections\12\style12_02.scss" />
     <Content Include="source\scss\06\style06_03.scss" />
+    <Content Include="source\scss\06\style06_MyBlockPresentation.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
