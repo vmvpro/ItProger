@@ -1,4 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
+/**{
+	margin:0;
+	padding:0;
+}*/
+.box01 {
+  clear: both;
+}
+
+.nice-btn {
+  display: inline-block;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 1.2em;
+  background-color: #ec6550;
+  text-shadow: #454545 0 0 1px;
+  border-bottom: 4px solid #d95b48;
+  color: #fff;
+  font-family: 'Roboto Slab',sans-serif;
+}
+
+.nice-btn:hover {
+  cursor: pointer;
+  margin-top: 3px;
+  border-bottom-width: 2px;
+}
+
+.vmv-button {
+  display: inline-block;
+  background: #bababa;
+  color: white;
+  border: 2px solid #c2c2c2;
+  background: -webkit-linear-gradient(bottom, #727272 0%, #000000 34%, #000000 51%, #727272 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c2c2', endColorstr='#d9d9d9', GradientType=0 );
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 2px solid #000000;
+  padding: 5px;
+}
+
+.vmv-button:hover {
+  cursor: pointer;
+  display: inline-block;
+  background: #b3b3b3;
+  color: #000000;
+  background: -webkit-linear-gradient(bottom, #727272 0%, #bababa 34%, #b3b3b3 51%, #727272 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c2c2', endColorstr='#d9d9d9', GradientType=0 );
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 2px solid #000000;
+  padding: 5px;
+}
+
+.vmv-button:active {
+  color: white;
+  border: 2px solid #c2c2c2;
+  background: -webkit-linear-gradient(bottom, #727272 0%, #000000 34%, #000000 51%, #727272 100%);
 }

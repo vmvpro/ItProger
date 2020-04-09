@@ -1,0 +1,32 @@
+﻿//@import: url('source/fonts/Roboto_Slab/static/RobotoSlab-Medium.ttf');
+
+@font-face {
+	/* Имя шрифта */
+	font-family: RobotoSlab;
+	/* Путь к файлу со шрифтом */
+	src: url(/source/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+body {
+
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+
+//---------------------------------
+
+p {
+	color: red;
+}
+
+p.myFont {
+	color: #0026ff;
+	//font-weight: bold;
+	font-family: RobotoSlab, cursive;
+}
+

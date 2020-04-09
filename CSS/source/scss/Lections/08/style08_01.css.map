@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "style08_01.css",
+	"sources": [
+		"style08_01.scss"
+	],
+	"mappings": "AAcA,AAAA,OAAO,AAAA,CACN,gBAAgB,CAAE,OAAQ,CAC1B,KAAK,CAAE,KAAM,CACb",
+	"names": []
+}

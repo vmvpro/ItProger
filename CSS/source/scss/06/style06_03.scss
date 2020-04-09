@@ -1,0 +1,39 @@
+﻿$border: 1px solid red;
+
+body {
+	background: #f2f2f2;
+}
+
+.container-vmv{
+	height:150px;
+	border: $border;
+	width:80%;
+	margin: 10px 10% 10px 10%;
+}
+
+.logo-vmv{
+	display:inline-block;
+	float:left;
+	border:$border;
+	width:30%;
+	height:80%;
+	background-image:url(../../images/vmvpro_ava.jpg);
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+.content-vmv {
+	display: inline-block;
+	overflow:hidden;
+	float: left;
+	border: $border;
+	width: 50%;
+	height:80%
+}
+
+.themes-vmv {
+
+	float:left;
+	border: $border;
+	width: 20%;
+}
