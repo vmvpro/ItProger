@@ -1,0 +1,84 @@
+/**{
+	padding:0;
+	margin:0;
+}*/
+.header {
+  display: flex;
+  height: 100px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: 2px solid blue;
+  height: auto;
+}
+
+.box > .item {
+  border: 1px solid red;
+  width: 120px;
+  text-align: center;
+  margin: 10px;
+}
+
+.box > .item img {
+  display: block;
+  width: 100%;
+  padding: 0px;
+}
+
+.boxVMV {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: 2px solid blue;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.boxVMV > .itemVMV {
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+}
+
+.boxImage {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  margin: 10px;
+}
+
+.boxImage > .itemImage {
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+  margin: 10px;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.boxImage > .itemImage img {
+  width: 100%;
+}
+
+/*section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	//flex-flow: row wrap;
+}
+
+article{
+	border:$border;
+	//width:50%;
+}
+
+.myDiv .left, .myDiv .right {
+	float:left;
+	border:$border;
+	width:50%;
+	text-align:center;
+}*/

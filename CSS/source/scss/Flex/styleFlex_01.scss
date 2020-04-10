@@ -1,0 +1,122 @@
+﻿$border-parent: 2px solid blue;
+$border-child: 1px solid red;
+
+
+body {
+}
+
+//-------------------
+/**{
+	padding:0;
+	margin:0;
+}*/
+//-----------------------------------
+
+.header {
+	display: flex;
+	height: 100px;
+}
+
+.box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	border: $border-parent;
+	//
+	height: auto;
+	//
+	//align-content: center;
+	//justify-content: center;
+	//border:$border-parent;
+}
+
+.box > .item {
+	border: $border-child;
+	//width:50px;
+	//height:50px;
+	width: 120px;
+	//height: 70px;
+	//
+	text-align: center;
+	margin: 10px;
+	//padding:15px;
+	//overflow: auto;
+}
+
+.box > .item img {
+	display: block;
+	width: 100%;
+	//height: 100%;
+	padding: 0px;
+}
+
+.boxVMV {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	border: $border-parent;
+	justify-content: flex-start;
+	padding: 10px;
+}
+
+.boxVMV > .itemVMV {
+	border: $border-child;
+	padding: 10px;
+	margin: 10px;
+}
+
+//-------------------------
+
+.boxImage {
+	display:flex;
+	flex-direction:row;
+	border: $border-child;
+	//padding: 10px;
+	margin: 10px;
+	// Позициирование дочерних элементов
+	//align-items:center;
+}
+
+.boxImage > .itemImage {
+	border: $border-child;
+	padding: 10px;
+	margin:10px;
+	margin: 10px;
+	// Обязателльно!!!
+	width: 100%;
+	//Центрирование содержимого
+	align-content: center;
+	justify-content: center;
+}
+
+// Стиль для картинок
+.boxImage > .itemImage img {
+	width: 100%;
+}
+
+//---------------------------------------
+
+
+//---------------------------------------
+	/*section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	//flex-flow: row wrap;
+}
+
+article{
+	border:$border;
+	//width:50%;
+}
+
+.myDiv .left, .myDiv .right {
+	float:left;
+	border:$border;
+	width:50%;
+	text-align:center;
+}*/
+	//-------------------------------------------
+
+
+

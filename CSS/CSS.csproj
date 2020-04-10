@@ -73,6 +73,7 @@
     <Content Include="index_06_FeedbackForm.html" />
     <Content Include="index_06_BlockPresentation.html" />
     <Content Include="index_06_BigTasks.html" />
+    <Content Include="index_Flexbox.html" />
     <Content Include="Lections\index_06_BackgroundImage - Копировать.html" />
     <Content Include="Lections\index_12_SpecialStylesForLists - Копировать.html" />
     <Content Include="index_Work.html" />
@@ -374,6 +375,8 @@
     <Content Include="source\scss\06\style06_MyBlockPresentation.scss" />
     <Content Include="source\scss\06\style06_FeedbackForm.scss" />
     <Content Include="source\scss\06\style06_CreateWebsite.scss" />
+    <Content Include="source\scss\Flex\styleFlex_01.scss" />
+    <Content Include="source\scss\Flex\styleFlex_02.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -382,12 +385,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Flexbox\" />
     <Folder Include="source\css\09\" />
     <Folder Include="source\css\12\" />
     <Folder Include="source\css\Work\" />
     <Folder Include="source\js\" />
     <Folder Include="source\scss\09\" />
-    <Folder Include="source\scss\Flex\" />
     <Folder Include="source\scss\Lections\09\" />
     <Folder Include="web_builder\js\" />
   </ItemGroup>
