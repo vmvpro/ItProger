@@ -186,6 +186,7 @@
     <Content Include="source\images\entry-img4.png" />
     <Content Include="source\images\entry-img5.png" />
     <Content Include="source\images\header.png" />
+    <Content Include="source\images\maxresdefault.jpg" />
     <Content Include="source\images\program_block_android.jpg" />
     <Content Include="source\images\save-ico.png" />
     <Content Include="source\images\starter-ico.png" />
