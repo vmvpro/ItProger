@@ -387,6 +387,7 @@
     <Folder Include="source\css\Work\" />
     <Folder Include="source\js\" />
     <Folder Include="source\scss\09\" />
+    <Folder Include="source\scss\Flex\" />
     <Folder Include="source\scss\Lections\09\" />
     <Folder Include="web_builder\js\" />
   </ItemGroup>
