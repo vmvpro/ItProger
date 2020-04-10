@@ -64,6 +64,24 @@
   width: 100%;
 }
 
+.boxCenter {
+  display: flex;
+  height: 300px;
+  border: 2px solid blue;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxCenter > .itemCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid red;
+  width: 80px;
+  height: 100px;
+}
+
 /*section {
 	display: flex;
 	flex-direction: row;

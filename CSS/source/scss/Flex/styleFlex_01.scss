@@ -68,8 +68,8 @@ body {
 //-------------------------
 
 .boxImage {
-	display:flex;
-	flex-direction:row;
+	display: flex;
+	flex-direction: row;
 	border: $border-child;
 	//padding: 10px;
 	margin: 10px;
@@ -80,7 +80,7 @@ body {
 .boxImage > .itemImage {
 	border: $border-child;
 	padding: 10px;
-	margin:10px;
+	margin: 10px;
 	margin: 10px;
 	// Обязателльно!!!
 	width: 100%;
@@ -92,13 +92,36 @@ body {
 // Стиль для картинок
 .boxImage > .itemImage img {
 	width: 100%;
+	//vertical-align:central;
 }
 
 //---------------------------------------
 
+$height: 100px;
+
+.boxCenter {
+	display: flex;
+	height: 300px;
+	border: $border-parent;
+	justify-content: center;
+	align-items: center;
+}
+
+.boxCenter > .itemCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align:center;
+	//
+	border: $border-child;
+	width: 80px;
+	height: $height;
+}
 
 //---------------------------------------
-	/*section {
+
+//---------------------------------------
+/*section {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -116,7 +139,7 @@ article{
 	width:50%;
 	text-align:center;
 }*/
-	//-------------------------------------------
+//-------------------------------------------
 
 
 
