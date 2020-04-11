@@ -80,6 +80,7 @@
   <ItemGroup>
     <Content Include="package.json" />
     <Content Include="Base\scss\styles.scss" />
+    <Content Include="libman.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
