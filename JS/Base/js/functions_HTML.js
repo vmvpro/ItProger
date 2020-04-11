@@ -1,7 +1,27 @@
 ﻿
+
+myItemClass();
+
+function myItemClass() {
+
+	var divClass = document.getElementById("divJS");
+	divClass.style.color = "blue";
+
+	var elements = divClass.querySelectorAll("div.myItemJS");
+	//elements[0].style.color = "red";
+
+	for (item = 0; item < elements.length; item++) {
+		elements[item].style.color = "red";
+	}
+
+}
+
+
+
+//------------------------------------------
 function formSend() {
-	name = document.getElementById("name").value;
-	age = document.getElementById("age").value;
+	var name = document.getElementById("name").value;
+	var age = document.getElementById("age").value;
 
 	var resultId = document.getElementById("result");
 
@@ -36,11 +56,6 @@ function btnStyle() {
 		txt.value = 1;
 
 	}
-
-	
-
-	
-
 
 }
 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title></title>
-	
+
 	<link href="base/source/css.min/styles.css" rel="stylesheet" />
 
 
@@ -14,14 +14,37 @@
 	<h1>JavaScript</h1>
 	<hr />
 	<!-- ------------------------- -->
+
+
+	<div id="divJS" >
+		<div class="myItemJS">Text1</div>
+		<div class="myItemJS">Text2</div>
+		<div class="myItemJS">Text3</div>
+		<div> Простой div</div>
+	</div>
 	
+
+	<hr />
+
+
+	<form>
+		<label>Максимум 25 символов:</label><br>
+		<textarea onkeyup="checkCharacters()"
+			id="textarea"></textarea>
+		<span id="rchars">25</span> символов осталось.
+	</form>
+
+	<hr />
+
+	<!-- ------------------------- -->
+
 	<button type="button"
 		onclick="document.getElementById('time_show').innerHTML = Date()">
 		Нажмите чтобы посмотреть дату и время</button>
 
 	<p id="time_show"></p>
 
-	<hr/>
+	<hr />
 
 	<button id="myButton" onclick="btnStyle()">Изменить стиль</button>
 	<input class="txtHide" type="number" hidden="hidden" name="name" value="" />
@@ -47,13 +70,13 @@
 		<div class="btn">
 			<button type="button" onclick="formSend()">Отправить</button>
 		</div>
-		
+
 	</form>
 
-	<div style="clear:both;"></div>
-	
+	<div style="clear: both;"></div>
+
 	<p id="result">Форма отправлена: &lt;форма не заполнена&gt;</p>
-	
+
 	<script src="base/source/js.min/scriptsBase.min.js"></script>
 
 
