@@ -54,7 +54,7 @@ source.distDirectoryPathCSS = source.webroot + "source/css.min";
 source.distDirectoryPathJS = source.webroot + "source/js.min";
 source.distDirectoryPath = source.webroot + "css/" + number;
 
-source.webroot + "css/" + number;
+//source.webroot + "css/" + number;
 
 //---------------------------------------------------------
 
@@ -70,13 +70,15 @@ gulp.task('ClearCssOfScss', ClearCssOfScss);
 
 // Минимизация файлов css
 // Минимизация файлов css
-var cssMin = function () {
+var cssMin = function (done) {
 	return gulp
-		.src([source.Css, "!" + source.CssMin])
+		.src([source.distDirectoryPathCSS + "/*.css", "!" + source.distDirectoryPathCSS + "/*.min.css"])
 		// Имя файла при минимизации
 		.pipe(concat(nameFileCss + ".min.css"))
 		.pipe(cssmin())
 		.pipe(gulp.dest(source.distDirectoryPathCSS));
+		//.pipe(browserSync.stream());
+		//done();
 };
 
 gulp.task('cssMin', cssMin);
@@ -104,7 +106,7 @@ var functionSass = function (done) {
 		.pipe(sass({ outputStyle: 'expanded' }))
 
 		//Расположение преобразованных файлов *.css 
-		.pipe(gulp.dest("base/css"))
+		.pipe(gulp.dest(source.distDirectoryPathCSS))
 		
 		// соединение веб-браузера
 		.pipe(browserSync.stream());
@@ -143,13 +145,22 @@ var functionService = function (done) {
 		//gulp.series(functionSass));
 		gulp.series(functionSass, cssMin));
 
+	//gulp.watch(
+	//	source.Css,
+	//	gulp.series(cssMin));
+
 	gulp.watch(
 		source.Js,
 		gulp.series(jsMin));
 
 	//---------------------------------------------------
 
-	gulp.watch([htmlFile.Name, "./base/js.min/stylesBase.min.js"])
+	gulp.watch(
+		[
+			htmlFile.Name,
+			"./base/js.min/stylesBase.min.js",
+			"./base/css.min/stylesBase.min.css"
+		])
 		.on('change', () => {
 			browserSync.reload();
 			done();
