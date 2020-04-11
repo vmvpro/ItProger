@@ -3,8 +3,8 @@
 body {
 }
 
-h1{
-	color:red;
+h1 {
+	color: red;
 }
 
 //------------------------
@@ -40,7 +40,7 @@ form > .inputForm input {
 }
 
 form > .btn button {
-	float:right;
+	float: right;
 	//
 	margin: 5px 15px;
 	padding: 5px 15px;
@@ -49,9 +49,17 @@ form > .btn button {
 }
 
 form > .btn button::after {
-	clear:both;
+	clear: both;
 }
 
 //#divJavaScript div.myItem{
 //	color:blue;
 //}
+
+.classButton {
+	margin: 5px 15px;
+	padding: 5px 15px;
+	border-radius: 5px;
+	border-style: groove;
+}
+

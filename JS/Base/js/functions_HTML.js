@@ -1,6 +1,16 @@
 ﻿
 
-myItemClass();
+function styleButtons() {
+	var buttons = document.getElementsByTagName("button");
+	//buttons[0].style.color = "red";
+
+	for (item = 0; item < buttons.length; item++) {
+		buttons[item].classList.add("classButton");
+	}
+
+}
+
+//myItemClass();
 
 function myItemClass() {
 

@@ -41,3 +41,10 @@ form > .btn button {
 form > .btn button::after {
   clear: both;
 }
+
+.classButton {
+  margin: 5px 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border-style: groove;
+}
