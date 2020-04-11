@@ -53,7 +53,7 @@ var _parseInt = parseInt("ssss");
 
 var sum = 1 + _parseInt.get;
 
-p(sum);
+//p(sum);
 
 
 

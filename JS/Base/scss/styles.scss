@@ -1,14 +1,54 @@
-﻿body {
-}
+﻿$border: 1px solid border;
 
-p{
-	color:blue;
+body {
 }
 
 h1{
 	color:red;
 }
 
-b{
-	color:red;
+//------------------------
+
+p {
+	color: red;
 }
+
+
+form {
+	width: 250px;
+	border: $border;
+}
+
+form p {
+	color: blue;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+form > .inputForm label {
+	display: inline-block;
+	width: 50px;
+	//color: aqua;
+	font-weight: bold;
+}
+
+form > .inputForm input {
+	margin: 5px 0px;
+	padding: 5px;
+	border-radius: 5px;
+	border-style: groove;
+}
+
+form > .btn button {
+	float:right;
+	//
+	margin: 5px 15px;
+	padding: 5px 15px;
+	border-radius: 5px;
+	border-style: groove;
+}
+
+form > .btn button::after {
+	clear:both;
+}
+

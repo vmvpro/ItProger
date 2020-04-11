@@ -1,25 +1,44 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-	<link href="" rel="stylesheet" />
-
+	<meta charset="utf-8" />
+	<title></title>
+	
 	<link href="base/source/css.min/styles.css" rel="stylesheet" />
-	
 
-	
+
+
 </head>
 <body>
 
-	<h1>VMV</h1>
-	<p>VMV P</p>
-	<button onclick="MyFirstFunction()">MyFunc</button>
+	<h1>JavaScript</h1>
+	<hr />
+	<!-- ------------------------- -->
 
+	<form class="myForm">
 
-	//----------------------------------------------
-	<!--<script src="base/js/functions.js"></script>-->
+		<p>VmvForm</p>
 
+		<div class="inputForm">
+			<label for="name">Name:</label>
+			<input id="name" type="text" name="name" placeholder="Введите имя" />
+		</div>
+
+		<div class="inputForm">
+			<label for="lbl_age">Age:</label>
+			<input id="age" type="text" name="Age" placeholder="Введите возраст" />
+		</div>
+
+		<div class="btn">
+			<button type="button" onclick="formSend()">Отправить</button>
+		</div>
+		
+	</form>
+	
+	<div style="clear:both;"></div>
+	
+	<p id="result">Форма отправлена: &lt;форма не заполнена&gt;</p>
+	
 	<script src="base/source/js.min/scriptsBase.min.js"></script>
 
 

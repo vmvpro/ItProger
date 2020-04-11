@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Base\indexBase.html" />
+    <Content Include="Base\js\functions_HTML.js" />
     <Content Include="Base\js\functions.js" />
     <Content Include="Base\source\css.min\styles.css" />
     <Content Include="Base\source\js.min\scriptsBase.min.js" />

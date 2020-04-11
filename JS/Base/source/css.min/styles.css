@@ -1,11 +1,43 @@
-p {
-  color: blue;
-}
-
 h1 {
   color: red;
 }
 
-b {
+p {
   color: red;
+}
+
+form {
+  width: 250px;
+  border: 1px solid border;
+}
+
+form p {
+  color: blue;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+form > .inputForm label {
+  display: inline-block;
+  width: 50px;
+  font-weight: bold;
+}
+
+form > .inputForm input {
+  margin: 5px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: groove;
+}
+
+form > .btn button {
+  float: right;
+  margin: 5px 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border-style: groove;
+}
+
+form > .btn button::after {
+  clear: both;
 }
