@@ -82,6 +82,31 @@
   height: 100px;
 }
 
+.boxLocation {
+  display: flex;
+  border: 2px solid blue;
+  justify-content: space-around;
+}
+
+.boxLocation > .itemLocation {
+  background-color: #df6c6c;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  flex-grow: 1;
+}
+
+.boxLocation > .itemLocation:nth-last-of-type(2) {
+  flex-grow: 3;
+  padding: 0px 10px;
+  border: 2px solid blue;
+  background-color: #f2f2f2;
+  color: black;
+  font-weight: bold;
+}
+
 /*section {
 	display: flex;
 	flex-direction: row;

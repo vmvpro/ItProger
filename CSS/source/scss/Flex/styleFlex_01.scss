@@ -120,6 +120,36 @@ $height: 100px;
 
 //---------------------------------------
 
+.boxLocation {
+	display: flex;
+	//margin: 20px;
+	border: $border-parent;
+	//
+	justify-content: space-around;
+
+}
+
+.boxLocation > .itemLocation {
+	background-color: rgba(223, 108, 108, 1);
+	color: white;
+	//margin-right: 10px;
+	text-align: center;
+	line-height: 100px;
+	width: 100px; 
+	height: 100px;
+	flex-grow: 1;
+}
+
+.boxLocation > .itemLocation:nth-last-of-type(2) {
+	flex-grow: 3;
+	//margin:0px 10px;
+	padding: 0px 10px;
+	border: $border-parent;
+	background-color: rgba(242,242,242,1);
+	color:black;
+	font-weight:bold;
+}
+
 //---------------------------------------
 /*section {
 	display: flex;
