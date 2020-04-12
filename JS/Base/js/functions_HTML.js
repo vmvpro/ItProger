@@ -1,5 +1,40 @@
 ﻿
 
+function styleButtonsNew() {
+
+
+	// Ищем класс в документе boxJS
+	var boxJs = document.getElementsByClassName("boxJS")[0];
+
+	// К содержимомоу класса добавляем наши элементы
+	// в начало
+	// (простой способ)
+	boxJs.innerHTML = "<div class='itemJS'>" +
+		new Date() +
+		"</div >" +
+		boxJs.innerHTML;
+
+
+	//-------------------
+
+	// С помощью объектной модели DOM API
+
+	var date = new Date();
+
+	var div = document.createElement("div");
+	div.className = "itemJS";
+	div.innerHTML = date.getMinutes() + ":" + date.getSeconds();
+
+	// метод добавляет в начало
+	boxJs.prepend(div);
+
+	// в конец 
+	//boxJs.appendChild(div);
+
+	// Создает текстовое содержимое
+	//var textnode = document.createTextNode("Water");         // Create a text node
+}
+
 function styleButtons() {
 	var buttons = document.getElementsByTagName("button");
 	//buttons[0].style.color = "red";
@@ -8,6 +43,40 @@ function styleButtons() {
 		buttons[item].classList.add("classButton");
 	}
 
+	var boxJs = document.getElementsByClassName("boxJS")[0];
+
+	//boxJs.innerHTML = "<div class='itemJS'>" +
+	//	new Date()
+	//	+ "</div >" + boxJs.innerHTML;
+
+
+	//-------------------
+
+	var date = new Date();
+
+	var div = document.createElement("div");
+	div.className = "itemJS";
+	div.innerHTML = date.getMinutes() + ":" + date.getSeconds();
+
+	//boxJs.appendChild(div);
+
+	boxJs.prepend(div);
+
+	//var text = document.createTextNode("Object my Js");
+
+
+	//var node = document.createElement("LI");                 // Create a <li> node
+	//var textnode = document.createTextNode("Water");         // Create a text node
+	//node.appendChild(textnode);                              // Append the text to <li>
+
+	//boxJs.appendChild(node); 
+
+	//var comment = "<div class='comment'><b>Email:</b> " +
+	//	email.value + "<br><b>Имя:</b> " + name.value + "<br><b>Телефон:</b> "
+	//	+ telephone.value + "<br>" + message.value + "</div>";
+	//// Добавлям новый комментарий в начало и после него добавляем все прошлые
+	//document.getElementById("allComments").innerHTML =
+	//	comment + document.getElementById("allComments").innerHTML;
 }
 
 //myItemClass();

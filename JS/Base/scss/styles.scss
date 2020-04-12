@@ -1,4 +1,4 @@
-﻿$border: 1px solid border;
+﻿$border: 1px solid red;
 
 body {
 }
@@ -63,3 +63,17 @@ form > .btn button::after {
 	border-style: groove;
 }
 
+//--------------------------------------
+
+.boxJS {
+	display:flex;
+	margin-top:20px;
+	border: 2px solid blue;
+	//height:50px;
+	flex-direction:column;
+}
+
+.boxJS > div.itemJS {
+	border: 1px solid red;
+	padding: 10px;
+}
