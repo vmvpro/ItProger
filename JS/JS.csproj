@@ -67,7 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Base\css\styles.css" />
+    <Content Include="Base\css\stylesSlider.css" />
+    <Content Include="Base\indexSlider.html" />
     <Content Include="Base\indexBase.html" />
+    <Content Include="Base\js\slider.js" />
     <Content Include="Base\js\functions_HTML.js" />
     <Content Include="Base\js\functions.js" />
     <Content Include="Base\source\css.min\styles.css" />
@@ -82,6 +86,7 @@
     <Content Include="package.json" />
     <Content Include="Base\scss\styles.scss" />
     <Content Include="libman.json" />
+    <Content Include="Base\scss\stylesSlider.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -91,7 +96,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Base\css\" />
     <Folder Include="Template\css\" />
     <Folder Include="Template\js\" />
     <Folder Include="Template\scss\" />

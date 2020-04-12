@@ -1,3 +1,0 @@
-h1{color:red}p{color:red}form{width:250px;border:1px solid red}form p{color:blue;font-size:22px;font-weight:bold}form>.inputForm label{display:inline-block;width:50px;font-weight:bold}form>.inputForm input{margin:5px 0px;padding:5px;border-radius:5px;border-style:groove}form>.btn button{float:right;margin:5px 15px;padding:5px 15px;border-radius:5px;border-style:groove}form>.btn button::after{clear:both}.classButton{margin:5px 15px;padding:5px 15px;border-radius:5px;border-style:groove}.boxJS{display:flex;margin-top:20px;border:2px solid blue;flex-direction:column}.boxJS>div.itemJS{border:1px solid red;padding:10px}
-
-/*# sourceMappingURL=styles.css.map */

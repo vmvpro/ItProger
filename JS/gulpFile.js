@@ -15,7 +15,7 @@ var log = require('fancy-log');
 
 // Переменные
 
-var number = "Base";
+var number = "Slider";
 
 var htmlFile = {
 	Name: "./base/index" + number + ".html"
@@ -50,9 +50,10 @@ source.Css = source.webroot + "css/*.css";
 source.CssMin = source.webroot + "css/*.min.cs";
 
 //Окончательная папка, где сохраняюся файлы css при минимизации
-source.distDirectoryPathCSS = source.webroot + "source/css.min";
+//source.distDirectoryPathCSS = source.webroot + "source/css.min";
+source.distDirectoryPathCSS = source.webroot + "css";
 source.distDirectoryPathJS = source.webroot + "source/js.min";
-source.distDirectoryPath = source.webroot + "css/" + number;
+
 
 //source.webroot + "css/" + number;
 
@@ -158,7 +159,7 @@ var functionService = function (done) {
 	gulp.watch(
 		[
 			htmlFile.Name,
-			"./base/js.min/stylesBase.min.js",
+			"./base/js/*.js",
 			"./base/css.min/stylesBase.min.css"
 		])
 		.on('change', () => {
