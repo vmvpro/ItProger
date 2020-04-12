@@ -1,8 +1,24 @@
-﻿
+﻿function buttonsStyle(){
+	var divClass = document.getElementById("divJS");
+	divClass.style.color = "blue";
 
-function styleButtonsNew() {
+	var elements = divClass.querySelectorAll("div.myItemJS");
+	//elements[0].style.color = "red";
+
+	//for (item = 0; item < elements.length; item++) {
+	//	elements[item].style.color = "red";
+	//}
+
+	//for (let element of elements) {
+	//	element.style.color = "red";
+	//}
+
+	document.myForm.name.value = "vmvpro";
+}
 
 
+function insertCommentsNew() {
+	
 	// Ищем класс в документе boxJS
 	var boxJs = document.getElementsByClassName("boxJS")[0];
 
@@ -13,8 +29,7 @@ function styleButtonsNew() {
 		new Date() +
 		"</div >" +
 		boxJs.innerHTML;
-
-
+	
 	//-------------------
 
 	// С помощью объектной модели DOM API
@@ -32,7 +47,8 @@ function styleButtonsNew() {
 	//boxJs.appendChild(div);
 
 	// Создает текстовое содержимое
-	//var textnode = document.createTextNode("Water");         // Create a text node
+	//var textnode = document.createTextNode("Water");         
+	
 }
 
 function styleButtons() {
