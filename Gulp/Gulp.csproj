@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\style.min.css" />
     <Content Include="gulpFile.js" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
@@ -75,17 +76,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="package.json" />
     <None Include=".bin\node.cmd" />
-    <Content Include="css\style.css" />
+    <Content Include="package.json" />
     <None Include="packages.config" />
-    <Content Include="scss\style.scss" />
+    <Content Include="scss\style01.scss" />
+    <Content Include="scss\style02.scss" />
+    <Content Include="scss\style03.scss" />
+    <Content Include="scss\style04.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css.min\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
