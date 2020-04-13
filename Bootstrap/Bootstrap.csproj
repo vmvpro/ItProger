@@ -90,6 +90,7 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="package.json" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
@@ -100,12 +101,11 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="package.json" />
-    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
-    <Content Include="Scripts\jquery-3.0.0.js" />
-    <Content Include="Scripts\jquery-3.0.0.min.js" />
-    <Content Include="Scripts\jquery-3.0.0.slim.js" />
-    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
@@ -179,11 +179,16 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="source\bootstrap\css\bootstrap.min.css" />
     <Content Include="source\bootstrap\js\bootstrap.min.js" />
-    <Content Include="source\bootstrap\js\jquery-3.0.0.min.js" />
-    <Content Include="source\bootstrap\js\jquery-3.0.0.slim.min.js" />
+    <Content Include="source\bootstrap\js\jquery-3.4.1.min.js" />
+    <Content Include="source\bootstrap\js\jquery-3.4.1.slim.min.js" />
     <Content Include="source\bootstrap\js\popper-utils.min.js" />
     <Content Include="source\bootstrap\js\popper.min.js" />
     <Content Include="source\css\style.min.css" />
+    <Content Include="source\img\slider_01.jpg" />
+    <Content Include="source\img\slider_02.jpg" />
+    <Content Include="source\img\slider_03.jpg" />
+    <Content Include="source\img\vmv.png" />
+    <Content Include="source\js\myFunctions.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -202,9 +207,9 @@
   <ItemGroup>
     <Content Include="libman.json" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
-    <Content Include="Scripts\jquery-3.0.0.min.map" />
     <Content Include="source\scss\style01.scss" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -155,7 +155,7 @@ function watchFiles() {
 	gulp.watch([directoryPath.Root + "scss/style.min.css"], browserReload);
 
 	gulp.watch(["./**/*.html"], browserReload);
-	gulp.watch([directoryPath.Root + "**/*.js"], browserReload);
+	gulp.watch([directoryPath.Root + "js/*.js"], browserReload);
 	//gulp.watch(["./css/*.css", "!./css/*.map"], workCssMin);
 	//gulp.watch(["./css.min/*.css"], browserReload);
 }
@@ -163,7 +163,7 @@ function watchFiles() {
 //-------------------------
 
 //gulp.task("allTasksVMV", gulp.parallel(sync, watchFiles, workScss, workCssMin));
-gulp.task("allTasksVMV", gulp.parallel(sync, watchFiles, gulp.series(workScss, workCssMin)));
+gulp.task("allTasksVMV", gulp.parallel(sync, watchFiles, gulp.series(workScss)));
 
 
 //gulp.task(sync);
