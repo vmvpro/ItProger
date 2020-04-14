@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "stylesSlider.css",
-	"sources": [
-		"stylesSlider.scss"
-	],
-	"mappings": "AAKA,AAAA,EAAE,AAAC,CACF,KAAK,CAAE,GAAI,CACX",
-	"names": []
-}

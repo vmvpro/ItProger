@@ -1,1 +1,1 @@
-﻿document.write("Hello my JavaScript!!!")
+﻿//document.write("Hello my JavaScript!!!")
